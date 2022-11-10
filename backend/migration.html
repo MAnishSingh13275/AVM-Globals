@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>AVM Globals</title>
+    <title>AVM Global</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico" />
@@ -37,7 +37,7 @@
               class="img-fluid rounded-normal d-none sidebar-light-img"
               alt="logo"
             />
-            <span>AVM Globals</span>
+            <span>AVM Global</span>
           </a>
           <div class="side-menu-bt-sidebar-1">
             <svg
@@ -165,7 +165,7 @@
                   ><span class="ml-2">Courses</span>
                 </a>
               </li>
-              <li class="sidebar-layout">
+              <li class="active sidebar-layout">
                 <a href="../backend/migration.html" class="svg-icon">
                   <i class="">
                     <svg
@@ -328,7 +328,7 @@
                   ><span class="ml-2">Quotes</span>
                 </a>
               </li>
-              <li class="active sidebar-layout">
+              <li class="sidebar-layout">
                 <a href="../backend/invoice.html" class="svg-icon">
                   <i class="">
                     <svg
@@ -1188,16 +1188,16 @@
                   <nav aria-label="breadcrumb">
                     <ol class="breadcrumb p-0 mb-0">
                       <li class="breadcrumb-item">
-                        <a href="../backend/invoice.html">Invoice</a>
+                        <a href="../backend/lead.html">Migration</a>
                       </li>
                       <li class="breadcrumb-item active" aria-current="page">
-                        Add Invoice
+                        Add Migration
                       </li>
                     </ol>
                   </nav>
                 </div>
                 <a
-                  href="../backend/invoice.html"
+                  href="#"
                   class="btn btn-primary btn-sm d-flex align-items-center justify-content-between ml-2"
                 >
                   <svg
@@ -1218,7 +1218,7 @@
             </div>
             <div class="col-lg-12 mb-3 d-flex justify-content-between">
               <h4 class="font-weight-bold d-flex align-items-center">
-                Add Invoice
+                Add Migration
               </h4>
             </div>
             <div class="col-lg-12">
@@ -1227,75 +1227,11 @@
                   <div class="row">
                     <div class="w-100">
                       <form class="row g-3 date-icon-set-modal">
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="inputState"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Invoice Owner</label
-                          >
-                          <select
-                            id="inputcountry"
-                            class="form-select form-control choicesjs"
-                          >
-                            <option class="">Select Owner</option>
-                            <option value="USA" selected>Owner1</option>
-                            <option value="UK">Owner2</option>
-                            <option value="France">Owner3</option>
-                          </select>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="inputState"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Client Name</label
-                          >
-                          <select
-                            id="inputClientName"
-                            class="form-select form-control choicesjs"
-                          >
-                            <option class="">Select Name</option>
-                            <option value="USA" selected>Name1</option>
-                            <option value="UK">Name2</option>
-                            <option value="France">Name3</option>
-                          </select>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="inputState"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Account Name</label
-                          >
-                          <select
-                            id="inputAccountName"
-                            class="form-select form-control choicesjs"
-                          >
-                            <option class="">Select Name</option>
-                            <option value="USA" selected>Name1</option>
-                            <option value="UK">Name2</option>
-                            <option value="France">Name3</option>
-                          </select>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="inputState"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Product Name</label
-                          >
-                          <select
-                            id="inputcountry"
-                            class="form-select form-control choicesjs"
-                          >
-                            <option class="">Select Name</option>
-                            <option value="Name1" selected>Name1</option>
-                            <option value="Name2">Name2</option>
-                            <option value="Name3">Name3</option>
-                          </select>
-                        </div>
                         <div class="col-md-5 mx-5 mb-3 position-relative">
                           <label
                             for="Text2"
                             class="form-label font-weight-bold text-muted text-uppercase"
-                            >Date of Creation</label
+                            >Retention Date</label
                           >
                           <input
                             type="text"
@@ -1328,7 +1264,7 @@
                           <label
                             for="Text2"
                             class="form-label font-weight-bold text-muted text-uppercase"
-                            >Due Date</label
+                            >DOB</label
                           >
                           <input
                             type="text"
@@ -1357,115 +1293,57 @@
                             </svg>
                           </span>
                         </div>
-                        <div class="col-md-12 mx-5">
+                        <div class="col-md-5 mx-5 mb-3">
                           <label
-                            for="inputAddress"
+                            for="Text1"
                             class="form-label font-weight-bold text-muted text-uppercase"
-                            >Address</label
+                            >Applicant/ Student</label
                           >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="Text1"
+                            
+                            
+                          />
                         </div>
-                        <div class="row col-md-5 mx-5 mb-5">
-                          <div class="col-md-6 my-2">
-                            <label
-                              for="inputHouseNo"
-                              class="form-label font-weight-normal text-muted text-uppercase"
-                              >House No.</label
-                            >
-                            <input
+                        <div class="col-md-5 mx-5 mb-3">
+                          <label
+                            for="Text1"
+                            class="form-label font-weight-bold text-muted text-uppercase"
+                            >Mobile No.</label
+                          >
+                          <input
                             type="number"
                             class="form-control"
                             id="Text1"
-                            placeholder="Enter House No."
-                            value="Christian Bale"
+                            
+                            
                           />
-                          </div>
-                          <div class="col-md-6 my-2">
-                            <label
-                              for="inputzip"
-                              class="form-label font-weight-normal text-muted text-uppercase"
-                              >Zip</label
-                            >
-                            <input
-                            type="number"
+                        </div>
+                        <div class="col-md-5 mx-5 mb-3">
+                          <label
+                            for="Text1"
+                            class="form-label font-weight-bold text-muted text-uppercase"
+                            >MMID</label
+                          >
+                          <input
+                            type="text"
                             class="form-control"
                             id="Text1"
-                            placeholder="Enter House No."
-                            value="Christian Bale"
+                            
+                            
                           />
-                          </div>
-                          <div class="col-md-6 my-2">
-                            <label
-                              for="State"
-                              class="form-label font-weight-normal text-muted text-uppercase"
-                              >State</label
-                            >
-                            <select
-                              id="inputAccountType"
-                              class="form-select form-control choicesjs"
-                            >
-                              <option class="">Select Name</option>
-                              <option value="Name1" selected>Default</option>
-                              <option value="Name2">Vendor</option>
-                              <option value="Name3">Individual</option>
-                            </select>
-                          </div>
-                          <div class="col-md-6 my-2">
-                            <label
-                              for="City"
-                              class="form-label font-weight-normal text-muted text-uppercase"
-                              >City</label
-                            >
-                            <select
-                              id="inputAccountType"
-                              class="form-select form-control choicesjs"
-                            >
-                              <option class="">Select Name</option>
-                              <option value="Name1" selected>Default</option>
-                              <option value="Name2">Vendor</option>
-                              <option value="Name3">Individual</option>
-                            </select>
-                          </div>
                         </div>
 
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text9"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Terms and Conditon</label
-                          >
-                          <textarea
-                            class="form-control"
-                            id="Text9"
-                            rows="2"
-                            placeholder="Enter Terms and Conditon"
-                          >
-                          </textarea>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text9"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Description</label
-                          >
-                          <textarea
-                            class="form-control"
-                            id="Text9"
-                            rows="2"
-                            placeholder="Enter Description"
-                          >
-                          </textarea>
-                        </div>
                       </form>
-                      <div class="d-flex justify-content-end mx-5 mt-3">
+                      <div
+                        class="d-flex justify-content-end mx-5 mt-3"
+                      >
                         <button
                           class="btn mx-1 btn-primary font-weight-bold btn-sm"
                         >
-                          Create Invoice
-                        </button>
-                        <button
-                          class="btn mx-1 btn-primary font-weight-bold btn-sm"
-                        >
-                          Save
+                          Create Lead
                         </button>
                         <button
                           class="btn mx-1 btn-primary font-weight-bold btn-sm"
@@ -1475,7 +1353,12 @@
                         <button
                           class="btn mx-1 btn-primary font-weight-bold btn-sm"
                         >
-                          Send Mail
+                          Save Lead
+                        </button>
+                        <button
+                          class="btn ml-1 btn-primary font-weight-bold btn-sm"
+                        >
+                          Convert to Client
                         </button>
                       </div>
                     </div>
