@@ -6406,6 +6406,9 @@ button.bg-skyblue:hover {
 .w-auto {
   width: auto !important;
 }
+.w-fit {
+  width: fit-content;
+}
 .h-25 {
   height: 25% !important;
 }
