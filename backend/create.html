@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+dl<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,10 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>AVM Global</title>
+    <title>AVM Globals</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../assets/images/avm circle.png" />
+    <link rel="shortcut icon" href="./assets/images/avm circle.png" />
 
     <link rel="stylesheet" href="../assets/css/backend-plugin.min.css" />
     <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0" />
@@ -37,7 +37,7 @@
               class="img-fluid rounded-normal d-none sidebar-light-img"
               alt="logo"
             />
-            <span>AVM Global</span>
+            <span>AVM Globals</span>
           </a>
           <div class="side-menu-bt-sidebar-1">
             <svg
@@ -60,7 +60,7 @@
         <div class="data-scrollbar" data-scroll="1">
           <nav class="iq-sidebar-menu">
             <ul id="iq-sidebar-toggle" class="side-menu">
-              <li class="sidebar-layout">
+              <li class="active sidebar-layout">
                 <a href="../index.html" class="svg-icon">
                   <i class="">
                     <svg
@@ -226,7 +226,7 @@
                   <span class="ml-2">Accounts</span>
                 </a>
               </li>
-              <li class="active sidebar-layout">
+              <li class="sidebar-layout">
                 <a href="../backend/tasks.html" class="svg-icon">
                   <i class="">
                     <svg
@@ -1179,215 +1179,407 @@
       </div>
       <div class="content-page">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12">
-              <div
-                class="d-flex flex-wrap align-items-center justify-content-between"
-              >
-                <div class="d-flex align-items-center justify-content-between">
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb p-0 mb-0">
-                      <li class="breadcrumb-item">
-                        <a href="../backend/lead.html">Task</a>
+          <div class="row col-lg-12">
+            <div class="w-100 d-flex">
+              <div class="col-lg-4">
+                <div class="card card-block card-stretch">
+                  <div class="card-body p-0">
+                    <div
+                      class="d-flex justify-content-between align-items-center p-3"
+                    >
+                      <li class="mx-auto">
+                        <a
+                          type="button"
+                          class="mx-auto"
+                          data-toggle="modal"
+                          data-target="#CreateUser"
+                        >
+                          <h5>Create user</h5>
+                        </a>
                       </li>
-                      <li class="breadcrumb-item active" aria-current="page">
-                        Add Tasks
-                      </li>
-                    </ol>
-                  </nav>
+                    </div>
+                  </div>
                 </div>
-                <a
-                  href="../backend/tasks.html"
-                  class="btn btn-primary btn-sm d-flex align-items-center justify-content-between ml-2"
+
+                <!-- Modal -->
+
+                <div
+                  class="modal fade"
+                  id="CreateUser"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalScrollableTitle"
+                  aria-hidden="true"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
+                  <div
+                    class="modal-dialog modal-dialog-scrollable"
+                    role="document"
                   >
-                    <path
-                      fill-rule="evenodd"
-                      d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span class="ml-2">Back</span>
-                </a>
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title"
+                          id="exampleModalScrollableTitle"
+                        >
+                          User Information
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="w-100">
+                                <form class="g-3 row date-icon-set-modal">
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >First Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Last Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Email</label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Title</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Enter Subject"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-12 mb-3 d-flex justify-content-between">
-              <h4 class="font-weight-bold d-flex align-items-center">
-                Add Tasks
-              </h4>
-            </div>
-            <div class="col-lg-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="w-100">
-                      <form class="row g-3 date-icon-set-modal">
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="inputState"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Task Owner</label
-                          >
-                          <select
-                            id="inputcountry"
-                            class="form-select form-control choicesjs"
-                          >
-                            <option class="">Select Title</option>
-                            <option value="USA" selected>Test1</option>
-                            <option value="UK">Test2</option>
-                            <option value="France">Test3</option>
-                          </select>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text1"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Subject</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="Text1"
-                            placeholder="Enter Full Name"
-                            value="Christian Bale"
-                          />
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3 position-relative">
-                          <label
-                            for="Text2"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Due Date</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control vanila-datepicker"
-                            id="Text2"
-                            name="event_date"
-                            placeholder="Enter Birth Day"
-                            autocomplete="off"
-                            value="05/15/2021"
-                          />
-                          <span class="search-link">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class=""
-                              width="20"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                              />
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="inputState"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Contact</label
-                          >
-                          <select
-                            id="inputcountry"
-                            class="form-select form-control choicesjs"
-                          >
-                            <option class="">Select Source</option>
-                            <option value="USA" selected>Direct</option>
-                            <option value="UK">Vendo</option>
-                            <option value="France">Social Media</option>
-                          </select>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text1"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Account</label
-                          >
-                          <select
-                            id=""
-                            class="form-select form-control choicesjs"
-                          >
-                            <option value="USA" selected>Hot</option>
-                            <option value="UK">Medium</option>
-                            <option value="France">Low</option>
-                          </select>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text1"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Status</label
-                          >
-                          <select
-                            id=""
-                            class="form-select form-control choicesjs"
-                          >
-                            <option value="USA" selected>Hot</option>
-                            <option value="UK">Medium</option>
-                            <option value="France">Low</option>
-                          </select>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text1"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Priority</label
-                          >
-                          <select
-                            id=""
-                            class="form-select form-control choicesjs"
-                          >
-                            <option value="USA" selected>Hot</option>
-                            <option value="UK">Medium</option>
-                            <option value="France">Low</option>
-                          </select>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text9"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Description</label
-                          >
-                          <textarea
-                            class="form-control"
-                            id="Text9"
-                            rows="2"
-                            placeholder="Enter Message"
-                          >
-                          </textarea>
-                        </div>
-                      </form>
-                      <div
-                        class="d-flex justify-content-end mx-5 mt-3"
-                      >
-                        <button
-                          class="btn mx-1 btn-primary font-weight-bold btn-sm"
+              <div class="col-lg-4">
+                <div class="card card-block card-stretch">
+                  <div class="card-body p-0">
+                    <div
+                      class="d-flex justify-content-between align-items-center p-3"
+                    >
+                      <li class="mx-auto">
+                        <a
+                          type="button"
+                          class="mx-auto"
+                          data-toggle="modal"
+                          data-target="#CreateGroup"
                         >
-                          Create Lead
+                          <h5>Create user</h5>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal -->
+
+                <div
+                  class="modal fade"
+                  id="CreateGroup"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalScrollableTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-scrollable"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title"
+                          id="exampleModalScrollableTitle"
+                        >
+                          User Information
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
                         </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="w-100">
+                                <form class="g-3 row date-icon-set-modal">
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >First Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Last Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Email</label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Title</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Enter Subject"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
                         <button
-                          class="btn mx-1 btn-primary font-weight-bold btn-sm"
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
                         >
-                          Save & Next
+                          Close
                         </button>
-                        <button
-                          class="btn mx-1 btn-primary font-weight-bold btn-sm"
-                        >
-                          Save Lead
+                        <button type="button" class="btn btn-primary">
+                          Save changes
                         </button>
-                        <button
-                          class="btn ml-1 btn-primary font-weight-bold btn-sm"
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card-block card-stretch">
+                  <div class="card-body p-0">
+                    <div
+                      class="d-flex justify-content-between align-items-center p-3"
+                    >
+                      <li class="mx-auto">
+                        <a
+                          type="button"
+                          class="mx-auto"
+                          data-toggle="modal"
+                          data-target="#ActivateUser"
                         >
-                          Convert to Client
+                          <h5>Activate user</h5>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal -->
+
+                <div
+                  class="modal fade"
+                  id="ActivateUser"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalScrollableTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-scrollable"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title"
+                          id="exampleModalScrollableTitle"
+                        >
+                          User Information
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="w-100">
+                                <form class="g-3 row date-icon-set-modal">
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >First Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Last Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Email</label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Location"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label
+                                      for="Text1"
+                                      class="form-label font-weight-bold text-muted text-uppercase"
+                                      >Title</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="Text1"
+                                      placeholder="Enter Subject"
+                                      value="Christian Bale"
+                                    />
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
                         </button>
                       </div>
                     </div>
@@ -1396,6 +1588,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Page end  -->
         </div>
       </div>
     </div>
@@ -1415,10 +1609,10 @@
           </div>
           <div class="col-lg-6 text-right">
             <span class="mr-1">
-                Powered By
-                <a href="https://www.krayon.com.au/" class="">Krayon</a>
+              Powered By
+              <a href="https://www.krayon.com.au/" class="">Krayon</a>
             </span>
-        </div>
+          </div>
         </div>
       </div>
     </footer>
