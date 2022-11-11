@@ -1227,119 +1227,157 @@
                   <div class="row">
                     <div class="w-100">
                       <form class="row g-3 date-icon-set-modal">
-                        <div class="col-md-5 mx-5 mb-3 position-relative">
+                        <div class="col-md-5 mx-5 mb-3">
                           <label
-                            for="Text2"
+                            for="inputState"
                             class="form-label font-weight-bold text-muted text-uppercase"
-                            >Retention Date</label
+                            >Services</label
                           >
-                          <input
-                            type="text"
-                            class="form-control vanila-datepicker"
-                            id="Text2"
-                            name="event_date"
-                            placeholder="Enter Birth Day"
-                            autocomplete="off"
-                            value="05/15/2021"
-                          />
-                          <span class="search-link">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class=""
-                              width="20"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
+                          <select
+                            id=""
+                            class="form-select form-control choicesjs"
+                          >
+                            <option class="">Subclass 500</option>
+                            <option class="">Subclass 485</option>
+                            <option class="">Subclass 600</option>
+                            <option class="">Subclass 482</option>
+                            <option class="">Subclass 189</option>
+                            <option class="">Subclass 190</option>
+                            <option class="">Subclass 491</option>
+                            <option class="">Subsequent Entrant</option>
+                            <option class="">Citizenship Entrant</option>
+                            <option class="">Skills Assessments</option>
+                          </select>
+                        </div>
+                        <div class="col-md-5 mx-5 mb-3">
+                            <label
+                              for="inputState"
+                              class="form-label font-weight-bold text-muted text-uppercase"
+                              >Services</label
                             >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                              />
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3 position-relative">
-                          <label
-                            for="Text2"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >DOB</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control vanila-datepicker"
-                            id="Text2"
-                            name="event_date"
-                            placeholder="Enter Birth Day"
-                            autocomplete="off"
-                            value="05/15/2021"
-                          />
-                          <span class="search-link">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class=""
-                              width="20"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
+                            <select
+                              id=""
+                              class="form-select form-control choicesjs"
                             >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                              />
-                            </svg>
-                          </span>
-                        </div>
+                              <option class="">Lodged</option>
+                              <option class="">Pending</option>
+                              <option class="">In Progress</option>
+                              <option class="">Grant</option>
+                              <option class="">Refuse</option>
+                              <option class="">Not Interested</option>
+                            </select>
+                          </div>
+
                         <div class="col-md-5 mx-5 mb-3">
                           <label
                             for="Text1"
                             class="form-label font-weight-bold text-muted text-uppercase"
-                            >Applicant/ Student</label
+                            >Assigned To</label
                           >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="Text1"
-                            
-                            
-                          />
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text1"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >Mobile No.</label
-                          >
-                          <input
-                            type="number"
-                            class="form-control"
-                            id="Text1"
-                            
-                            
-                          />
-                        </div>
-                        <div class="col-md-5 mx-5 mb-3">
-                          <label
-                            for="Text1"
-                            class="form-label font-weight-bold text-muted text-uppercase"
-                            >MMID</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="Text1"
-                            
-                            
-                          />
+                          <input type="text" class="form-control" id="Text1" />
                         </div>
 
+                        <div class="col-md-5 mx-5 mb-3 position-relative">
+                            <label
+                              for="Text2"
+                              class="form-label font-weight-bold text-muted text-uppercase"
+                              >Lodgement Date</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control vanila-datepicker"
+                              id="Text2"
+                              name="event_date"
+                              placeholder="Enter Birth Day"
+                              autocomplete="off"
+                              value="05/15/2021"
+                            />
+                            <span class="search-link">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class=""
+                                width="20"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="col-md-5 mx-5 mb-3 position-relative">
+                            <label
+                              for="Text2"
+                              class="form-label font-weight-bold text-muted text-uppercase"
+                              >Visa Expiry Date</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control vanila-datepicker"
+                              id="Text2"
+                              name="event_date"
+                              placeholder="Enter Birth Day"
+                              autocomplete="off"
+                              value="05/15/2021"
+                            />
+                            <span class="search-link">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class=""
+                                width="20"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="col-md-5 mx-5 mb-3 position-relative">
+                            <label
+                              for="Text2"
+                              class="form-label font-weight-bold text-muted text-uppercase"
+                              >Task Due Date</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control vanila-datepicker"
+                              id="Text2"
+                              name="event_date"
+                              placeholder="Enter Birth Day"
+                              autocomplete="off"
+                              value="05/15/2021"
+                            />
+                            <span class="search-link">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class=""
+                                width="20"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                />
+                              </svg>
+                            </span>
+                          </div>
                       </form>
-                      <div
-                        class="d-flex justify-content-end mx-5 mt-3"
-                      >
+                      <div class="d-flex justify-content-end mx-5 mt-3">
                         <button
                           class="btn mx-1 btn-primary font-weight-bold btn-sm"
                         >
@@ -1386,10 +1424,10 @@
           </div>
           <div class="col-lg-6 text-right">
             <span class="mr-1">
-                Powered By
-                <a href="https://www.krayon.com.au/" class="">Krayon</a>
+              Powered By
+              <a href="https://www.krayon.com.au/" class="">Krayon</a>
             </span>
-        </div>
+          </div>
         </div>
       </div>
     </footer>
