@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,7 +26,7 @@
                <a href="../index.html" class="header-logo">
                   <img src="../assets/images/avm circle.png" class="img-fluid rounded-normal light-logo" alt="logo">
                   <img src="../assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
-                  <span>AVM Globals</span>            
+                  <span>AVM Global</span>            
               </a>
               <div class="side-menu-bt-sidebar-1">
                       <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -122,7 +123,7 @@
                     </a>
                   </li>
                   <li class="sidebar-layout">
-                    <a href="../backend/client.html" class="svg-icon">
+                    <a href="../backend/#" class="svg-icon">
                       <i class="">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +182,7 @@
                       ><span class="ml-2">Client</span>
                     </a>
                   </li>
-                  <li class="sidebar-layout">
+                  <li class="active sidebar-layout">
                     <a href="../backend/user.html" class="svg-icon">
                       <i class="">
                         <svg
@@ -284,7 +285,7 @@
                       ><span class="ml-2">Calls</span>
                     </a>
                   </li>
-                  <li class="active sidebar-layout">
+                  <li class="sidebar-layout">
                     <a href="../backend/products.html" class="svg-icon">
                       <i class="">
                         <svg
@@ -692,7 +693,7 @@
             <div class="col-lg-12">
                 <div class="d-flex flex-wrap align-items-center justify-content-between my-schedule mb-4">
                    <div class="d-flex align-items-center justify-content-between">
-                        <h4 class="font-weight-bold">Product</h4>
+                        <h4 class="font-weight-bold">User</h4>
                     </div>  
                     <div class="create-workform">
                         <div class="d-flex flex-wrap align-items-center justify-content-between">
@@ -726,7 +727,7 @@
                                 </form>
                                 <div class="w-100 d-flex justify-content-md-end my-md-2 my-lg-0">
                                   <a
-                                  href="../backend/addProduct.html"
+                                  href="../backend/addUser.html"
                                   class="btn btn-primary position-relative d-flex align-items-center justify-content-between w-fit"
                                 >
                                   <svg
@@ -744,85 +745,197 @@
                                       d="M12 6v6m0 0v6m0-6h6m-6 0H6"
                                     />
                                   </svg>
-                                  Add Products
+                                  Add User
                                 </a>
                                 </div>
                               </div>                          
                         </div>
                     </div>                    
-                </div>
-                
+                </div>                
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="card card-block card-stretch">
-                            <div class="card-body p-0">
-                                <div class="d-flex justify-content-between align-items-center p-3">
-                                    <h5 class="font-weight-bold">Products List</h5>
-                                    <button class="btn btn-secondary btn-sm">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      <div class="card card-block card-stretch">
+                        <div class="card-body p-0">
+                          <div
+                            class="d-flex justify-content-between align-items-center p-3"
+                          >
+                            <h5 class="font-weight-bold">User List</h5>
+                            <button class="btn btn-secondary btn-sm">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="mr-1"
+                                width="20"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                                />
+                              </svg>
+                              Export
+                            </button>
+                          </div>
+                          <div class="table-responsive">
+                            <table class="table data-table mb-0">
+                              <thead class="table-color-heading">
+                                <tr class="">
+                                  <th scope="col" class="pr-0 w-1">
+                                    <div
+                                      class="d-flex justify-content-start align-items-end mb-1"
+                                    >
+                                      <div
+                                        class="custom-control custom-checkbox custom-control-inline"
+                                      >
+                                        <input
+                                          type="checkbox"
+                                          class="custom-control-input m-0"
+                                          id="customCheck1"
+                                        />
+                                        <label
+                                          class="custom-control-label"
+                                          for="customCheck1"
+                                        ></label>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">Location</th>
+                                  <th scope="col">Phone</th>
+                                  <th scope="col" class="text-right">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="white-space-no-wrap">
+                                  <td class="pr-0">
+                                    <div
+                                      class="custom-control custom-checkbox custom-control-inline"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="custom-control-input m-0"
+                                        id="customCheck"
+                                      />
+                                      <label
+                                        class="custom-control-label"
+                                        for="customCheck"
+                                      ></label>
+                                    </div>
+                                  </td>
+                                  <td class="p-0">
+                                    <div
+                                      class="active-project-1 d-flex align-items-center mt-0"
+                                    >
+                                      <div class="data-content">
+                                        <div>
+                                          <span class="font-weight-bold"
+                                            >Christian Bale</span
+                                          >
+                                        </div>
+                                        <p class="m-0 text-secondary small">
+                                          Vari tech
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>christian.Bale@blueberrye.com</td>
+                                  <td>Ohio, USA</td>
+                                  <td>+1 (021) 145-2256</td>
+                                  <td>
+                                    <div
+                                      class="d-flex justify-content-end align-items-center"
+                                    >
+                                      <a
+                                        class=""
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title=""
+                                        data-original-title="View"
+                                        href="../backend/viewUser.html"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          class="text-secondary"
+                                          width="20"
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke="currentColor"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                          />
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                          />
                                         </svg>
-                                        Export
-                                    </button>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table data-table mb-0">
-                                        <thead class="table-color-heading">
-                                            <tr class="text-light">
-                                                <th scope="col">
-                                                    <label class="text-muted m-0" >Product Name</label>
-                                                </th>
-                                                <th scope="col">
-                                                    <label class="text-muted mb-0" >Category</label>
-                                                </th>
-                                                <th scope="col" class="text-right">
-                                                    <label class="text-muted mb-0" >Price</label>
-                                                </th>
-                                                <th scope="col" class="text-right">
-                                                    <span class="text-muted" >Action</span>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="white-space-no-wrap">
-                                                <td class="">
-                                                    <div class="active-project-1 d-flex align-items-center mt-0 ">
-                                                        <div class="data-content">
-                                                            <div>
-                                                            <span class="font-weight-bold">Bassheads 220 Wired Headset</span>                           
-                                                            </div>
-                                                            <p class="m-0 mt-1">
-                                                            Molten Orange, In the Ear
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>Headset  </td>
-                                                <td class="text-right">
-                                                    $74.98
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex justify-content-end align-items-center">
-                                                        <a class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                                                            </svg>
-                                                        </a>
-                                                        <a class="badge bg-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                                      </a>
+                                      <a
+                                        class=""
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title=""
+                                        data-original-title="Edit"
+                                        href="../backend/viewUser.html"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          class="text-secondary mx-4"
+                                          width="20"
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke="currentColor"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                                          />
+                                        </svg>
+                                      </a>
+                                      <a
+                                        class="badge bg-danger"
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title=""
+                                        data-original-title="Delete"
+                                        href="#"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="20"
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke="currentColor"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -842,8 +955,7 @@
                 <div class="col-lg-6 text-right">
                     <span class="mr-1">
                         Powered By
-                        <script>document.write(new Date().getFullYear())</script>© <a href="#" class="">AVM Globals</a>
-                        All Rights Reserved.
+                        <a href="https://www.krayon.com.au/" class="">Krayon</a>
                     </span>
                 </div>
             </div>

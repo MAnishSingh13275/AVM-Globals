@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>AVM Globals</title>
+    <title>AVM Global</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/images/avm circle.png" />
@@ -37,7 +37,7 @@
               class="img-fluid rounded-normal d-none sidebar-light-img"
               alt="logo"
             />
-            <span>AVM Globals</span>
+            <span>AVM Global</span>
           </a>
           <div class="side-menu-bt-sidebar-1">
             <svg
@@ -103,7 +103,7 @@
                   <span class="ml-2">Leads</span>
                 </a>
               </li>
-              <li class="sidebar-layout">
+              <li class="active sidebar-layout">
                 <a href="../backend/services.html" class="svg-icon">
                   <i class="">
                     <svg
@@ -287,7 +287,7 @@
                   ><span class="ml-2">Meetings</span>
                 </a>
               </li>
-              <li class="active sidebar-layout">
+              <li class="sidebar-layout">
                 <a href="../backend/calls.html" class="svg-icon">
                   <i class="">
                     <svg
@@ -1202,555 +1202,217 @@
           <div class="row">
             <div class="col-lg-12">
               <div
-                class="d-flex flex-wrap align-items-center justify-content-between my-schedule mb-4"
+                class="d-flex flex-wrap align-items-center justify-content-between"
               >
                 <div class="d-flex align-items-center justify-content-between">
-                  <h4 class="font-weight-bold">Calls</h4>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-0 mb-0">
+                      <li class="breadcrumb-item">
+                        <a href="../backend/lead.html">Services</a>
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Add Services
+                      </li>
+                    </ol>
+                  </nav>
                 </div>
-                <div class="d-flex">
-                  <div class="mx-2">
-                    <button
-                      type="button"
-                      class="btn btn-primary mt-2"
-                      data-toggle="modal"
-                      data-target="#ScheduleCall"
-                    >
-                      Schedule Calls
-                    </button>
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="ScheduleCall"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="exampleModalScrollableTitle"
-                      aria-hidden="true"
-                    >
-                      <div
-                        class="modal-dialog modal-dialog-scrollable"
-                        role="document"
-                      >
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5
-                              class="modal-title"
-                              id="exampleModalScrollableTitle"
-                            >
-                              Calls Information
-                            </h5>
-                            <button
-                              type="button"
-                              class="close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="card">
-                              <div class="card-body">
-                                <div class="row">
-                                  <div class="w-100">
-                                    <form class="row date-icon-set-modal">
-                                      <div class="col-md-6 mb-3">
-                                        <label
-                                          for="inputState"
-                                          class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Contact</label
-                                        >
-                                        <select
-                                          id="inputcountry"
-                                          class="form-select form-control choicesjs"
-                                        >
-                                          <option class="">
-                                            Select Source
-                                          </option>
-                                          <option value="USA" selected>
-                                            Direct
-                                          </option>
-                                          <option value="UK">Vendo</option>
-                                          <option value="France">
-                                            Social Media
-                                          </option>
-                                        </select>
-                                      </div>
-                                      <div class="col-md-6 mb-3">
-                                        <label
-                                          for="inputState"
-                                          class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Account</label
-                                        >
-                                        <select
-                                          id="inputcountry"
-                                          class="form-select form-control choicesjs"
-                                        >
-                                          <option class="">
-                                            Select Source
-                                          </option>
-                                          <option value="USA" selected>
-                                            Direct
-                                          </option>
-                                          <option value="UK">Vendo</option>
-                                          <option value="France">
-                                            Social Media
-                                          </option>
-                                        </select>
-                                      </div>
-                                      <div
-                                        class="col-md-6 mb-3 position-relative"
-                                      >
-                                        <label
-                                          for="Text2"
-                                          class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Date</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control vanila-datepicker"
-                                          id="Text2"
-                                          name="event_date"
-                                          placeholder="Enter"
-                                          autocomplete="off"
-                                        />
-                                        <span class="search-link">
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class=""
-                                            width="20"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                          >
-                                            <path
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="2"
-                                              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                                            />
-                                          </svg>
-                                        </span>
-                                      </div>
-                                      <div
-                                        class="col-md-6 mb-3 position-relative"
-                                      >
-                                        <label
-                                          for="Text2"
-                                          class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Time</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control timepicker"
-                                          id="Text2"
-                                          name="event_date"
-                                          placeholder="Enter"
-                                          autocomplete="off"
-                                        />
-                                        <span class="search-link">
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class=""
-                                            width="20"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                          >
-                                            <path
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="2"
-                                              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                                            />
-                                          </svg>
-                                        </span>
-                                      </div>
-                                    </form>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button
-                              type="button"
-                              class="btn btn-secondary"
-                              data-dismiss="modal"
-                            >
-                              Close
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Save changes
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button
-                      type="button"
-                      class="btn btn-primary mt-2"
-                      data-toggle="modal"
-                      data-target="#LogCalls"
-                    >
-                      Log Calls
-                    </button>
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="LogCalls"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="exampleModalScrollableTitle"
-                      aria-hidden="true"
-                    >
-                      <div
-                        class="modal-dialog modal-dialog-scrollable"
-                        role="document"
-                      >
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5
-                              class="modal-title"
-                              id="exampleModalScrollableTitle"
-                            >
-                              Calls Information
-                            </h5>
-                            <button
-                              type="button"
-                              class="close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="card">
-                              <div class="card-body">
-                                <div class="row">
-                                  <div class="w-100">
-                                    <form class="row date-icon-set-modal">
-                                      <div class="col-md-6 mb-3">
-                                        <label
-                                          for="inputState"
-                                          class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Contact</label
-                                        >
-                                        <select
-                                          id="inputcountry"
-                                          class="form-select form-control choicesjs"
-                                        >
-                                          <option class="">
-                                            Select Source
-                                          </option>
-                                          <option value="USA" selected>
-                                            Direct
-                                          </option>
-                                          <option value="UK">Vendo</option>
-                                          <option value="France">
-                                            Social Media
-                                          </option>
-                                        </select>
-                                      </div>
-                                      <div class="col-md-6 mb-3">
-                                        <label
-                                          for="inputState"
-                                          class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Account</label
-                                        >
-                                        <select
-                                          id="inputcountry"
-                                          class="form-select form-control choicesjs"
-                                        >
-                                          <option class="">
-                                            Select Source
-                                          </option>
-                                          <option value="USA" selected>
-                                            Direct
-                                          </option>
-                                          <option value="UK">Vendo</option>
-                                          <option value="France">
-                                            Social Media
-                                          </option>
-                                        </select>
-                                      </div>
-                                      <div
-                                        class="col-md-6 mb-3 position-relative"
-                                      >
-                                        <label
-                                          for="Text2"
-                                          class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Date</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control vanila-datepicker"
-                                          id="Text2"
-                                          name="event_date"
-                                          placeholder="Enter"
-                                          autocomplete="off"
-                                        />
-                                        <span class="search-link">
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class=""
-                                            width="20"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                          >
-                                            <path
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="2"
-                                              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                                            />
-                                          </svg>
-                                        </span>
-                                      </div>
-                                      <div
-                                        class="col-md-6 mb-3 position-relative"
-                                      >
-                                        <label
-                                          for="Text2"
-                                          class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Time</label
-                                        >
-                                        <input
-                                          type="text"
-                                          class="form-control timepicker"
-                                          id="Text2"
-                                          name="event_date"
-                                          placeholder="Enter"
-                                          autocomplete="off"
-                                        />
-                                        <span class="search-link">
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class=""
-                                            width="20"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                          >
-                                            <path
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="2"
-                                              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                                            />
-                                          </svg>
-                                        </span>
-                                      </div>
-                                    </form>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button
-                              type="button"
-                              class="btn btn-secondary"
-                              data-dismiss="modal"
-                            >
-                              Close
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Save changes
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <a
+                  href="../backend/services.html"
+                  class="btn btn-primary btn-sm d-flex align-items-center justify-content-between ml-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="ml-2">Back</span>
+                </a>
               </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="card card-block card-stretch">
-                    <div class="card-body p-0">
-                      <div
-                        class="d-flex justify-content-between align-items-center p-3"
-                      >
-                        <h5 class="font-weight-bold">Calls List</h5>
-                        <button class="btn btn-secondary btn-sm">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="mr-1"
-                            width="20"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
+            </div>
+            <div class="col-lg-12 mb-3 d-flex justify-content-between">
+              <h4 class="font-weight-bold d-flex align-items-center">
+                Add Services
+              </h4>
+            </div>
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="w-100">
+                      <form class="row g-3 date-icon-set-modal">
+                        <div class="col-md-5 mx-5 mb-3">
+                          <label
+                            for="inputState"
+                            class="form-label font-weight-bold text-muted text-uppercase"
+                            >Services</label
                           >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          <select
+                            id=""
+                            class="form-select form-control choicesjs"
+                          >
+                            <option class="">Subclass 500</option>
+                            <option class="">Subclass 485</option>
+                            <option class="">Subclass 600</option>
+                            <option class="">Subclass 482</option>
+                            <option class="">Subclass 189</option>
+                            <option class="">Subclass 190</option>
+                            <option class="">Subclass 491</option>
+                            <option class="">Subsequent Entrant</option>
+                            <option class="">Citizenship Entrant</option>
+                            <option class="">Skills Assessments</option>
+                          </select>
+                        </div>
+                        <div class="col-md-5 mx-5 mb-3">
+                            <label
+                              for="inputState"
+                              class="form-label font-weight-bold text-muted text-uppercase"
+                              >Services</label
+                            >
+                            <select
+                              id=""
+                              class="form-select form-control choicesjs"
+                            >
+                              <option class="">Lodged</option>
+                              <option class="">Pending</option>
+                              <option class="">In Progress</option>
+                              <option class="">Grant</option>
+                              <option class="">Refuse</option>
+                              <option class="">Not Interested</option>
+                            </select>
+                          </div>
+
+                        <div class="col-md-5 mx-5 mb-3">
+                          <label
+                            for="Text1"
+                            class="form-label font-weight-bold text-muted text-uppercase"
+                            >Assigned To</label
+                          >
+                          <input type="text" class="form-control" id="Text1" />
+                        </div>
+
+                        <div class="col-md-5 mx-5 mb-3 position-relative">
+                            <label
+                              for="Text2"
+                              class="form-label font-weight-bold text-muted text-uppercase"
+                              >Lodgement Date</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control vanila-datepicker"
+                              id="Text2"
+                              name="event_date"
+                              placeholder="Enter Birth Day"
+                              autocomplete="off"
+                              value="05/15/2021"
                             />
-                          </svg>
-                          Export
+                            <span class="search-link">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class=""
+                                width="20"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="col-md-5 mx-5 mb-3 position-relative">
+                            <label
+                              for="Text2"
+                              class="form-label font-weight-bold text-muted text-uppercase"
+                              >Visa Expiry Date</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control vanila-datepicker"
+                              id="Text2"
+                              name="event_date"
+                              placeholder="Enter Birth Day"
+                              autocomplete="off"
+                              value="05/15/2021"
+                            />
+                            <span class="search-link">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class=""
+                                width="20"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="col-md-5 mx-5 mb-3 position-relative">
+                            <label
+                              for="Text2"
+                              class="form-label font-weight-bold text-muted text-uppercase"
+                              >Task Due Date</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control vanila-datepicker"
+                              id="Text2"
+                              name="event_date"
+                              placeholder="Enter Birth Day"
+                              autocomplete="off"
+                              value="05/15/2021"
+                            />
+                            <span class="search-link">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class=""
+                                width="20"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                      </form>
+                      <div class="d-flex justify-content-end mx-5 mt-3">
+                        <button
+                          class="btn mx-1 btn-primary font-weight-bold btn-sm"
+                        >
+                          Create Service
                         </button>
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table data-table mb-0">
-                          <thead class="table-color-heading">
-                            <tr class="">
-                              <th scope="col" class="pr-0 w-01">
-                                <div
-                                  class="d-flex justify-content-start align-items-end mb-1"
-                                >
-                                  <div
-                                    class="custom-control custom-checkbox custom-control-inline"
-                                  >
-                                    <input
-                                      type="checkbox"
-                                      class="custom-control-input m-0"
-                                      id="customCheck1"
-                                    />
-                                    <label
-                                      class="custom-control-label mr-4"
-                                      for="customCheck1"
-                                    ></label>
-                                  </div>
-                                </div>
-                              </th>
-                              <th scope="col">Subject</th>
-                              <th scope="col">Call Type</th>
-                              <th scope="col">Call Start Time</th>
-                              <th scope="col">Call Duration</th>
-                              <th scope="col">Related To</th>
-                              <th scope="col">Call Owner</th>
-                              <th scope="col" class="text-right">Action</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="white-space-no-wrap">
-                              <td class="pr-0">
-                                <div
-                                  class="custom-control custom-checkbox custom-control-inline"
-                                >
-                                  <input
-                                    type="checkbox"
-                                    class="custom-control-input m-0"
-                                    id="customCheck"
-                                  />
-                                  <label
-                                    class="custom-control-label"
-                                    for="customCheck"
-                                  ></label>
-                                </div>
-                              </td>
-                              <td class="">
-                                <div
-                                  class="d-flex align-items-center mt-0"
-                                >
-                                  <div class="data-content">
-                                    <div>
-                                      <span class="font-weight-bold"
-                                        >Follow up with Lead</span
-                                      >
-                                    </div>
-                                    <p class="m-0 text-secondary small">
-                                      Vari tech
-                                    </p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>Outbound</td>
-                              <td>Nov 7, 2022 09:30 AM</td>
-                              <td></td>
-                              <td></td>
-                              <td>Rajesh</td>
-                              <td>
-                                <div
-                                  class="d-flex justify-content-end align-items-center"
-                                >
-                                  <a
-                                    class=""
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title=""
-                                    data-original-title="View"
-                                    href="../backend/customer-view.html"
-                                  >
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      class="text-secondary"
-                                      width="20"
-                                      fill="none"
-                                      viewBox="0 0 24 24"
-                                      stroke="currentColor"
-                                    >
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                      />
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                                      />
-                                    </svg>
-                                  </a>
-                                  <a
-                                    class=""
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title=""
-                                    data-original-title="Edit"
-                                    href="../backend/customer-edit.html"
-                                  >
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      class="text-secondary mx-4"
-                                      width="20"
-                                      fill="none"
-                                      viewBox="0 0 24 24"
-                                      stroke="currentColor"
-                                    >
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-                                      />
-                                    </svg>
-                                  </a>
-                                  <a
-                                    class="badge bg-danger"
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title=""
-                                    data-original-title="Delete"
-                                    href="#"
-                                  >
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="20"
-                                      fill="none"
-                                      viewBox="0 0 24 24"
-                                      stroke="currentColor"
-                                    >
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                                      />
-                                    </svg>
-                                  </a>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <button
+                          class="btn mx-1 btn-primary font-weight-bold btn-sm"
+                        >
+                          Save & Next
+                        </button>
+                        <button
+                          class="btn mx-1 btn-primary font-weight-bold btn-sm"
+                        >
+                          Save Service
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1777,10 +1439,10 @@
           </div>
           <div class="col-lg-6 text-right">
             <span class="mr-1">
-                Powered By
-                <a href="https://www.krayon.com.au/" class="">Krayon</a>
+              Powered By
+              <a href="https://www.krayon.com.au/" class="">Krayon</a>
             </span>
-        </div>
+          </div>
         </div>
       </div>
     </footer>
