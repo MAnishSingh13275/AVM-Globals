@@ -569,7 +569,7 @@
             
           },
          
-          labels: ["Mobile","Electronics", "Laptop", "Others"],
+          labels: ["India","China", "United States", "Others"],
           colors: ['#ffbb33', '#04237D', '#e60000', '#8080ff'],
           plotOptions: {
             pie: {

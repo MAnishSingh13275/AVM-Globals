@@ -165,7 +165,7 @@
                   ><span class="ml-2">Courses</span>
                 </a>
               </li>
-              <li class="active sidebar-layout">
+              <li class="sidebar-layout">
                 <a href="../backend/migration.html" class="svg-icon">
                   <i class="">
                     <svg
@@ -385,7 +385,7 @@
                   <span class="ml-2">Invoice</span>
                 </a>
               </li>
-              <li class="sidebar-layout">
+              <li class="active sidebar-layout">
                 <a href="../backend/reports.html" class="svg-icon">
                   <i class="">
                     <svg
@@ -1205,7 +1205,7 @@
                 class="d-flex flex-wrap align-items-center justify-content-between my-schedule mb-4"
               >
                 <div class="d-flex align-items-center justify-content-between">
-                  <h4 class="font-weight-bold">Migration</h4>
+                  <h4 class="font-weight-bold">Leads</h4>
                 </div>
                 <div class="create-workform">
                   <div
@@ -1243,7 +1243,7 @@
                         class="w-100 d-flex justify-content-md-end my-md-2 my-lg-0"
                       >
                         <a
-                          href="../backend/addMigration.html"
+                          href="../backend/addLead.html"
                           class="btn btn-primary position-relative d-flex align-items-center justify-content-between w-fit"
                         >
                           <svg
@@ -1261,7 +1261,7 @@
                               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
                             />
                           </svg>
-                          Add Migration
+                          Add Lead
                         </a>
                       </div>
                     </div>
@@ -1275,7 +1275,7 @@
                       <div
                         class="d-flex justify-content-between align-items-center p-3"
                       >
-                        <h5 class="font-weight-bold">Migration List</h5>
+                        <h5 class="font-weight-bold">Lead List</h5>
                         <button class="btn btn-secondary btn-sm">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -1312,17 +1312,16 @@
                                       id="customCheck1"
                                     />
                                     <label
-                                      class="custom-control-label mr-2"
+                                      class="custom-control-label"
                                       for="customCheck1"
                                     ></label>
                                   </div>
                                 </div>
                               </th>
-                              <th scope="col">Retention Date</th>
-                              <th scope="col">DOB</th>
-                              <th scope="col">Applicant/Student</th>
-                              <th scope="col">Mobile Number</th>
-                              <th scope="col">MMID</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Location</th>
+                              <th scope="col">Phone</th>
                               <th scope="col" class="text-right">Action</th>
                             </tr>
                           </thead>
@@ -1343,13 +1342,25 @@
                                   ></label>
                                 </div>
                               </td>
-                              <td>
-                                5/12/2022
+                              <td class="p-0">
+                                <div
+                                  class="active-project-1 d-flex align-items-center mt-0"
+                                >
+                                  <div class="data-content">
+                                    <div>
+                                      <span class="font-weight-bold"
+                                        >Christian Bale</span
+                                      >
+                                    </div>
+                                    <p class="m-0 text-secondary small">
+                                      Vari tech
+                                    </p>
+                                  </div>
+                                </div>
                               </td>
-                              <td>17/12/2002</td>
-                              <td>John Dae</td>
+                              <td>christian.Bale@blueberrye.com</td>
+                              <td>Ohio, USA</td>
                               <td>+1 (021) 145-2256</td>
-                              <td>02145-52256</td>
                               <td>
                                 <div
                                   class="d-flex justify-content-end align-items-center"
@@ -1360,7 +1371,7 @@
                                     data-placement="top"
                                     title=""
                                     data-original-title="View"
-                                    href="../backend/viewMigration.html"
+                                    href="../backend/viewLead.html"
                                   >
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
