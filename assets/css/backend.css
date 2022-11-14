@@ -19968,6 +19968,10 @@ textarea.form-control {
 .logo-invoice {
   height: 55px;
 }
+.invoice-logo {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .print .card-title {
   color: #fff;
 }
