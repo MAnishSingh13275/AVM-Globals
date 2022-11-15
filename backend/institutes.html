@@ -124,7 +124,7 @@
 									<span class="ml-2">Student's Service</span>
 								</a>
 							</li>
-							<li class="sidebar-layout">
+							<li class="active sidebar-layout">
 								<a href="../backend/institutes.html" class="svg-icon">
 									<i class="">
 										<svg
@@ -280,7 +280,7 @@
 									><span class="ml-2">Meetings</span>
 								</a>
 							</li>
-							<li class="active sidebar-layout">
+							<li class="sidebar-layout">
 								<a href="../backend/calls.html" class="svg-icon">
 									<i class="">
 										<svg
@@ -1194,364 +1194,64 @@
 								class="d-flex flex-wrap align-items-center justify-content-between my-schedule mb-4"
 							>
 								<div class="d-flex align-items-center justify-content-between">
-									<h4 class="font-weight-bold">Calls</h4>
+									<h4 class="font-weight-bold">Institutes</h4>
 								</div>
-								<div class="d-flex">
-									<div class="mx-2">
-										<button
-											type="button"
-											class="btn btn-primary mt-2"
-											data-toggle="modal"
-											data-target="#ScheduleCall"
-										>
-											Schedule Calls
-										</button>
-										<!-- Modal -->
-										<div
-											class="modal fade"
-											id="ScheduleCall"
-											tabindex="-1"
-											role="dialog"
-											aria-labelledby="exampleModalScrollableTitle"
-											aria-hidden="true"
-										>
-											<div
-												class="modal-dialog modal-dialog-scrollable"
-												role="document"
-											>
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5
-															class="modal-title"
-															id="exampleModalScrollableTitle"
+								<div class="create-workform">
+									<div
+										class="d-flex flex-wrap align-items-center justify-content-between"
+									>
+										<div class="modal-product-search d-lg-flex">
+											<form class="mr-3 position-relative">
+												<div class="form-group mb-0">
+													<input
+														type="text"
+														class="form-control"
+														id="exampleInputText"
+														placeholder="Search Customer"
+													/>
+													<a class="search-link" href="#">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															class=""
+															width="20"
+															fill="none"
+															viewBox="0 0 24 24"
+															stroke="currentColor"
 														>
-															Calls Information
-														</h5>
-														<button
-															type="button"
-															class="close"
-															data-dismiss="modal"
-															aria-label="Close"
-														>
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<div class="card">
-															<div class="card-body">
-																<div class="row">
-																	<div class="w-100">
-																		<form class="row date-icon-set-modal">
-																			<div class="col-md-6 mb-3">
-																				<label
-																					for="inputState"
-																					class="form-label font-weight-bold text-muted text-uppercase"
-																					>Contact</label
-																				>
-																				<select
-																					id="inputcountry"
-																					class="form-select form-control choicesjs"
-																				>
-																					<option class="">
-																						Select Source
-																					</option>
-																					<option value="USA" selected>
-																						Direct
-																					</option>
-																					<option value="UK">Vendo</option>
-																					<option value="France">
-																						Social Media
-																					</option>
-																				</select>
-																			</div>
-																			<div class="col-md-6 mb-3">
-																				<label
-																					for="inputState"
-																					class="form-label font-weight-bold text-muted text-uppercase"
-																					>Account</label
-																				>
-																				<select
-																					id="inputcountry"
-																					class="form-select form-control choicesjs"
-																				>
-																					<option class="">
-																						Select Source
-																					</option>
-																					<option value="USA" selected>
-																						Direct
-																					</option>
-																					<option value="UK">Vendo</option>
-																					<option value="France">
-																						Social Media
-																					</option>
-																				</select>
-																			</div>
-																			<div
-																				class="col-md-6 mb-3 position-relative"
-																			>
-																				<label
-																					for="Text2"
-																					class="form-label font-weight-bold text-muted text-uppercase"
-																					>Date</label
-																				>
-																				<input
-																					type="text"
-																					class="form-control vanila-datepicker"
-																					id="Text2"
-																					name="event_date"
-																					placeholder="Enter"
-																					autocomplete="off"
-																				/>
-																				<span class="search-link">
-																					<svg
-																						xmlns="http://www.w3.org/2000/svg"
-																						class=""
-																						width="20"
-																						fill="none"
-																						viewBox="0 0 24 24"
-																						stroke="currentColor"
-																					>
-																						<path
-																							stroke-linecap="round"
-																							stroke-linejoin="round"
-																							stroke-width="2"
-																							d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-																						/>
-																					</svg>
-																				</span>
-																			</div>
-																			<div
-																				class="col-md-6 mb-3 position-relative"
-																			>
-																				<label
-																					for="Text2"
-																					class="form-label font-weight-bold text-muted text-uppercase"
-																					>Time</label
-																				>
-																				<input
-																					type="text"
-																					class="form-control timepicker"
-																					id="Text2"
-																					name="event_date"
-																					placeholder="Enter"
-																					autocomplete="off"
-																				/>
-																				<span class="search-link">
-																					<svg
-																						xmlns="http://www.w3.org/2000/svg"
-																						class=""
-																						width="20"
-																						fill="none"
-																						viewBox="0 0 24 24"
-																						stroke="currentColor"
-																					>
-																						<path
-																							stroke-linecap="round"
-																							stroke-linejoin="round"
-																							stroke-width="2"
-																							d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-																						/>
-																					</svg>
-																				</span>
-																			</div>
-																		</form>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="modal-footer">
-														<button
-															type="button"
-															class="btn btn-secondary"
-															data-dismiss="modal"
-														>
-															Close
-														</button>
-														<button type="button" class="btn btn-primary">
-															Save changes
-														</button>
-													</div>
+															<path
+																stroke-linecap="round"
+																stroke-linejoin="round"
+																stroke-width="2"
+																d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+															/>
+														</svg>
+													</a>
 												</div>
-											</div>
-										</div>
-									</div>
-									<div>
-										<button
-											type="button"
-											class="btn btn-primary mt-2"
-											data-toggle="modal"
-											data-target="#LogCalls"
-										>
-											Log Calls
-										</button>
-										<!-- Modal -->
-										<div
-											class="modal fade"
-											id="LogCalls"
-											tabindex="-1"
-											role="dialog"
-											aria-labelledby="exampleModalScrollableTitle"
-											aria-hidden="true"
-										>
+											</form>
 											<div
-												class="modal-dialog modal-dialog-scrollable"
-												role="document"
+												class="w-100 d-flex justify-content-md-end my-md-2 my-lg-0"
 											>
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5
-															class="modal-title"
-															id="exampleModalScrollableTitle"
-														>
-															Calls Information
-														</h5>
-														<button
-															type="button"
-															class="close"
-															data-dismiss="modal"
-															aria-label="Close"
-														>
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<div class="card">
-															<div class="card-body">
-																<div class="row">
-																	<div class="w-100">
-																		<form class="row date-icon-set-modal">
-																			<div class="col-md-6 mb-3">
-																				<label
-																					for="inputState"
-																					class="form-label font-weight-bold text-muted text-uppercase"
-																					>Contact</label
-																				>
-																				<select
-																					id="inputcountry"
-																					class="form-select form-control choicesjs"
-																				>
-																					<option class="">
-																						Select Source
-																					</option>
-																					<option value="USA" selected>
-																						Direct
-																					</option>
-																					<option value="UK">Vendo</option>
-																					<option value="France">
-																						Social Media
-																					</option>
-																				</select>
-																			</div>
-																			<div class="col-md-6 mb-3">
-																				<label
-																					for="inputState"
-																					class="form-label font-weight-bold text-muted text-uppercase"
-																					>Account</label
-																				>
-																				<select
-																					id="inputcountry"
-																					class="form-select form-control choicesjs"
-																				>
-																					<option class="">
-																						Select Source
-																					</option>
-																					<option value="USA" selected>
-																						Direct
-																					</option>
-																					<option value="UK">Vendo</option>
-																					<option value="France">
-																						Social Media
-																					</option>
-																				</select>
-																			</div>
-																			<div
-																				class="col-md-6 mb-3 position-relative"
-																			>
-																				<label
-																					for="Text2"
-																					class="form-label font-weight-bold text-muted text-uppercase"
-																					>Date</label
-																				>
-																				<input
-																					type="text"
-																					class="form-control vanila-datepicker"
-																					id="Text2"
-																					name="event_date"
-																					placeholder="Enter"
-																					autocomplete="off"
-																				/>
-																				<span class="search-link">
-																					<svg
-																						xmlns="http://www.w3.org/2000/svg"
-																						class=""
-																						width="20"
-																						fill="none"
-																						viewBox="0 0 24 24"
-																						stroke="currentColor"
-																					>
-																						<path
-																							stroke-linecap="round"
-																							stroke-linejoin="round"
-																							stroke-width="2"
-																							d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-																						/>
-																					</svg>
-																				</span>
-																			</div>
-																			<div
-																				class="col-md-6 mb-3 position-relative"
-																			>
-																				<label
-																					for="Text2"
-																					class="form-label font-weight-bold text-muted text-uppercase"
-																					>Time</label
-																				>
-																				<input
-																					type="text"
-																					class="form-control timepicker"
-																					id="Text2"
-																					name="event_date"
-																					placeholder="Enter"
-																					autocomplete="off"
-																				/>
-																				<span class="search-link">
-																					<svg
-																						xmlns="http://www.w3.org/2000/svg"
-																						class=""
-																						width="20"
-																						fill="none"
-																						viewBox="0 0 24 24"
-																						stroke="currentColor"
-																					>
-																						<path
-																							stroke-linecap="round"
-																							stroke-linejoin="round"
-																							stroke-width="2"
-																							d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-																						/>
-																					</svg>
-																				</span>
-																			</div>
-																		</form>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="modal-footer">
-														<button
-															type="button"
-															class="btn btn-secondary"
-															data-dismiss="modal"
-														>
-															Close
-														</button>
-														<button type="button" class="btn btn-primary">
-															Save changes
-														</button>
-													</div>
-												</div>
+												<a
+													href="../backend/addInstitute.html"
+													class="btn btn-primary position-relative d-flex align-items-center justify-content-between w-fit"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														class="mr-2"
+														width="20"
+														fill="none"
+														viewBox="0 0 24 24"
+														stroke="currentColor"
+													>
+														<path
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															stroke-width="2"
+															d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+														/>
+													</svg>
+													Add Institute
+												</a>
 											</div>
 										</div>
 									</div>
@@ -1564,7 +1264,7 @@
 											<div
 												class="d-flex justify-content-between align-items-center p-3"
 											>
-												<h5 class="font-weight-bold">Calls List</h5>
+												<h5 class="font-weight-bold">Institute List</h5>
 												<button class="btn btn-secondary btn-sm">
 													<svg
 														xmlns="http://www.w3.org/2000/svg"
@@ -1588,7 +1288,7 @@
 												<table class="table data-table mb-0">
 													<thead class="table-color-heading">
 														<tr class="">
-															<th scope="col" class="pr-0 w-01">
+															<th scope="col" class="pr-0 w-1">
 																<div
 																	class="d-flex justify-content-start align-items-end mb-1"
 																>
@@ -1601,18 +1301,16 @@
 																			id="customCheck1"
 																		/>
 																		<label
-																			class="custom-control-label mr-4"
+																			class="custom-control-label"
 																			for="customCheck1"
 																		></label>
 																	</div>
 																</div>
 															</th>
-															<th scope="col">Subject</th>
-															<th scope="col">Call Type</th>
-															<th scope="col">Call Start Time</th>
-															<th scope="col">Call Duration</th>
-															<th scope="col">Related To</th>
-															<th scope="col">Call Owner</th>
+															<th scope="col">Insitute Name</th>
+															<th scope="col">Institute Location</th>
+															<th scope="col">Insitute Address</th>
+															<th scope="col">CRICOS Code</th>
 															<th scope="col" class="text-right">Action</th>
 														</tr>
 													</thead>
@@ -1633,25 +1331,10 @@
 																	></label>
 																</div>
 															</td>
-															<td class="">
-																<div class="d-flex align-items-center mt-0">
-																	<div class="data-content">
-																		<div>
-																			<span class="font-weight-bold"
-																				>Follow up with Lead</span
-																			>
-																		</div>
-																		<p class="m-0 text-secondary small">
-																			Vari tech
-																		</p>
-																	</div>
-																</div>
-															</td>
-															<td>Outbound</td>
-															<td>Nov 7, 2022 09:30 AM</td>
-															<td>20 mins</td>
-															<td>School</td>
-															<td>Rajesh</td>
+															<td>University of Sydney</td>
+															<td>Ohio, USA</td>
+															<td></td>
+															<td>1452</td>
 															<td>
 																<div
 																	class="d-flex justify-content-end align-items-center"
@@ -1662,7 +1345,7 @@
 																		data-placement="top"
 																		title=""
 																		data-original-title="View"
-																		href="../backend/customer-view.html"
+																		href="../backend/viewInstitute.html"
 																	>
 																		<svg
 																			xmlns="http://www.w3.org/2000/svg"
@@ -1692,7 +1375,7 @@
 																		data-placement="top"
 																		title=""
 																		data-original-title="Edit"
-																		href="../backend/customer-edit.html"
+																		href="../backend/viewInstitute.html"
 																	>
 																		<svg
 																			xmlns="http://www.w3.org/2000/svg"
