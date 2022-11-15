@@ -6,7 +6,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<title>Datum | CRM Admin Dashboard Template</title>
+		<title>AVM Globals</title>
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="../assets/images/avm circle.png" />
@@ -1233,7 +1233,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-4">
+						<div class="col-lg-12">
 							<div class="card">
 								<ul class="list-group list-group-flush">
 									<li class="list-group-item">
@@ -1364,7 +1364,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-8">
+						<div class="col-lg-12">
 							<div class="card">
 								<div class="card-body p-0">
 									<ul class="nav tab-nav-pane nav-tabs pt-2 mb-0">
@@ -1751,128 +1751,409 @@
 										<div id="activity" class="tab-pane fade p-3">
 											<h3 class="mb-3">Activity</h3>
 											<div
-												class="iq-timeline0 m-0 d-flex align-items-center justify-content-between position-relative"
-											>
-												<ul class="list-inline p-0 m-0">
-													<li>
-														<div class="pt-3">
-															<p
-																class="mb-0 text-muted font-weight-bold text-uppercase"
-															>
-																13, September 2020
-															</p>
-														</div>
-													</li>
-													<li>
-														<div
-															class="timeline-dots timeline-dot1 border-primary text-primary"
-														></div>
-														<h6 class="float-left mb-1 font-weight-bold">
-															Signed Out
-														</h6>
-														<div class="d-inline-block w-100">
-															<p class="mb-0">
-																Santander crea una sociedad para gestionar las
-																sucursales que cierra
-															</p>
-															<div class="d-inline-block w-100">
-																<p>
-																	Probablemente, la bodega más sostenible de
-																	españa
-																</p>
+												class="m-0 d-flex align-items-center justify-content-between position-relative">
+												<div class="d-flex col-md-5 mb-3">
+													<label for="Text1"
+														class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase">Emails</label>
+													<div class="d-flex">
+														<div>
+															<button type="button" class="btn btn-primary font-weight-bold"
+																data-toggle="modal" data-target="#ScheduleCall">
+																Compose Email
+															</button>
+															<!-- Modal -->
+															<div class="modal fade" id="ScheduleCall" tabindex="-1"
+																role="dialog" aria-labelledby="exampleModalScrollableTitle"
+																aria-hidden="true">
+																<div class="modal-dialog modal-dialog-scrollable"
+																	role="document">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<h5 class="modal-title"
+																				id="exampleModalScrollableTitle">
+																				New Email
+																			</h5>
+																			<button type="button" class="close"
+																				data-dismiss="modal" aria-label="Close">
+																				<span aria-hidden="true">&times;</span>
+																			</button>
+																		</div>
+																		<div class="modal-body">
+																			<table class="table table-borderless mb-0">
+																				<tr>
+																					<td class="d-flex p-0">
+																						<img src="../assets/images/avm circle.png"
+																							style="height: 45px;" />
+																						<p class="m-2">AVM Globals</p>
+																						<p class="m-2 text-muted">
+																							example@gmail.com</p>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="d-flex mt-3 p-0">
+																						<!-- <img src="../assets/images/avm circle.png" style="height: 45px;"/> -->
+																						<p class="mt-2 mb-2 mr-2">To</p>
+																						<input style="border-radius: 6px; width: 100%; border-color: rgb(214, 212, 212);" type="email" id="email" name="email">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="d-flex p-0 mt-3">
+																						<!-- <img src="../assets/images/avm circle.png" style="height: 45px;"/> -->
+																						<input
+																							placeholder="Subject"
+																							style="border: none;"></input>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="d-flex p-0 mt-3 mb-3">
+																						<label class="mt-2 mb-2 mr-2" for="myfile">Select</label>
+																						<input class="mt-2"  type="file" id="myfile" name="myfile">
+																					</td>
+																				</tr>
+																				<tr>
+																					
+																					<td class="p-0">
+																						<!-- <img src="../assets/images/avm circle.png" style="height: 45px;"/> -->
+																						<p class="mt-2 text-muted">
+																							Enter your message here.</p>
+																						<textarea class="form-control"
+																							id="Text9" rows="2">
+																						</textarea>
+																					</td>
+																				</tr>
+																			</table>
+																		</div>
+																		<div class="modal-footer">
+																			<button type="button" class="btn btn-secondary"
+																				data-dismiss="modal">
+																				Cancel
+																			</button>
+																			<button type="button" class="btn btn-primary">
+																				Send
+																			</button>
+																		</div>
+																	</div>
+																</div>
 															</div>
 														</div>
-													</li>
-													<li>
-														<div
-															class="timeline-dots timeline-dot1 border-primary text-primary"
-														></div>
-														<h6 class="float-left mb-1 font-weight-bold">
-															Create Invoice IN-302240
-														</h6>
-														<div class="d-inline-block w-100">
-															<p>
-																Repsol sopesa elegir primero un socio para su
-																área de renovables y después sacarla a Bolsa
-															</p>
-														</div>
-													</li>
-													<li>
-														<div
-															class="timeline-dots timeline-dot1 border-primary text-primary"
-														></div>
-														<h6 class="float-left mb-1 font-weight-bold">
-															Signed In
-														</h6>
-														<div class="d-inline-block w-100">
-															<p>
-																El Ibex busca nuevos máximos en la última
-																jornada de abril
-															</p>
-														</div>
-														<div class="pt-3">
-															<p
-																class="mb-0 text-muted font-weight-bold text-uppercase"
-															>
-																14, September 2020
-															</p>
-														</div>
-													</li>
-													<li>
-														<div
-															class="timeline-dots timeline-dot1 border-primary text-primary"
-														></div>
-														<h6 class="float-left mb-1 font-weight-bold">
-															Signed Out
-														</h6>
-														<div class="d-inline-block w-100">
-															<p>
-																Ecoener se atreve con la Bolsa y se estrenará
-																con una valoración de 336 millones
-															</p>
-														</div>
-													</li>
-													<li>
-														<div
-															class="timeline-dots timeline-dot1 border-primary text-primary"
-														></div>
-														<h6 class="float-left mb-1 font-weight-bold">
-															Create Invoice IN-662210
-														</h6>
-														<div class="d-inline-block w-100">
-															<p class="mb-0">
-																BBVA supera la crisis del Covid y gana 1.210
-																millones en el primer trimestre
-															</p>
-														</div>
-														<div class="d-inline-block w-100">
-															<p>
-																Probablemente, la bodega más sostenible de
-																españa
-															</p>
-														</div>
-													</li>
-													<li>
-														<div
-															class="timeline-dots timeline-dot1 border-primary text-primary"
-														></div>
-														<h6 class="float-left mb-1 font-weight-bold">
-															Signed In
-														</h6>
-														<div class="d-inline-block w-100">
-															<p class="mb-0">
-																El mercado se prepara para una corrección en
-																mayo tras el rally bursátil
-															</p>
-														</div>
-														<div class="d-inline-block w-100">
-															<p>
-																Repsol sopesa elegir primero un socio para su
-																área de renovables y después sacarla a Bolsa
-															</p>
-														</div>
-													</li>
-												</ul>
+													</div>
+												</div>
+											</div>
+											
+											<div
+												class="m-0 d-flex align-items-center justify-content-between position-relative">
+												<div class="d-flex col-md-5 mb-3">
+													<label for="Text1"
+														class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase">Quotes</label>
+													<div class="d-flex">
+														<button class="btn mr-1 btn-primary font-weight-bold btn-sm">
+															Assign
+														</button>
+														<button class="btn mr-1 btn-primary font-weight-bold btn-sm">
+															<a style="color: white;" href="../backend/addLeadQuote.html">New</a>
+														</button>
+													</div>
+												</div>
+	
+											</div>
+											<div class="table-responsive">
+												<table class="table data-table mb-0">
+													<thead class="table-color-heading">
+														<tr class="">
+															<th scope="col" class="pr-0 w-1">
+																<div
+																	class="d-flex justify-content-start align-items-end mb-1">
+																	<div
+																		class="custom-control custom-checkbox custom-control-inline">
+																		<input type="checkbox"
+																			class="custom-control-input m-0"
+																			id="customCheck1" />
+																		<label class="custom-control-label"
+																			for="customCheck1"></label>
+																	</div>
+																</div>
+															</th>
+															<th scope="col">Quote Owner</th>
+															<th scope="col">Subject</th>
+															<th scope="col">Product Name</th>
+															<th scope="col">Client Name</th>
+															<th scope="col">Account Name</th>
+															<th scope="col">Valid Until</th>
+															<th scope="col" class="text-right">Action</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="white-space-no-wrap">
+															<td class="pr-0">
+																<div
+																	class="custom-control custom-checkbox custom-control-inline">
+																	<input type="checkbox" class="custom-control-input m-0"
+																		id="customCheck" />
+																	<label class="custom-control-label"
+																		for="customCheck"></label>
+																</div>
+															</td>
+															<td>
+																<div class="d-flex align-items-center mt-0">
+																	<div class="data-content">
+																		<div>
+																			<span class="font-weight-bold">Christian
+																				Bale</span>
+																		</div>
+																		<p class="m-0 text-secondary small">
+																			Vari tech
+																		</p>
+																	</div>
+																</div>
+															</td>
+															<td>Migration</td>
+															<td>Admission</td>
+															<td>John</td>
+															<td>Client</td>
+															<td>10/12/2022</td>
+															<td>
+																<div class="d-flex justify-content-end align-items-center">
+																	<a class="" data-toggle="tooltip" data-placement="top"
+																		title="" data-original-title="View"
+																		href="../backend/viewQuote.html">
+																		<svg xmlns="http://www.w3.org/2000/svg"
+																			class="text-secondary" width="20" fill="none"
+																			viewBox="0 0 24 24" stroke="currentColor">
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+																		</svg>
+																	</a>
+																	<a class="" data-toggle="tooltip" data-placement="top"
+																		title="" data-original-title="Edit"
+																		href="../backend/customer-edit.html">
+																		<svg xmlns="http://www.w3.org/2000/svg"
+																			class="text-secondary mx-4" width="20"
+																			fill="none" viewBox="0 0 24 24"
+																			stroke="currentColor">
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+																		</svg>
+																	</a>
+																	<a class="badge bg-danger" data-toggle="tooltip"
+																		data-placement="top" title=""
+																		data-original-title="Delete" href="#">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20"
+																			fill="none" viewBox="0 0 24 24"
+																			stroke="currentColor">
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+																		</svg>
+																	</a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<hr />
+											<div
+												class="m-0 d-flex align-items-center justify-content-between position-relative">
+												<div class="d-flex col-md-5 mb-3">
+													<label for="Text1"
+														class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase">Products</label>
+													<div class="d-flex">
+														<button class="btn mr-1 btn-primary font-weight-bold btn-sm">
+															<a style="color: white;" href="../backend/addLeadProduct.html">Add Products</a>
+														</button>
+													</div>
+												</div>
+	
+											</div>
+											<div class="table-responsive">
+												<table class="table data-table mb-0">
+													<thead class="table-color-heading">
+														<tr class="text-light">
+															<th scope="col">
+																<label class="text-muted m-0">Product Name</label>
+															</th>
+															<th scope="col">
+																<label class="text-muted mb-0">Category</label>
+															</th>
+															<th scope="col" class="text-right">
+																<label class="text-muted mb-0">Price</label>
+															</th>
+															<th scope="col" class="text-right">
+																<span class="text-muted">Action</span>
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="white-space-no-wrap">
+															<td class="">
+																<div
+																	class="active-project-1 d-flex align-items-center mt-0">
+																	<div class="data-content">
+																		<div>
+																			<span class="font-weight-bold">Bassheads 220
+																				Wired Headset</span>
+																		</div>
+																		<p class="m-0 mt-1">
+																			Molten Orange, In the Ear
+																		</p>
+																	</div>
+																</div>
+															</td>
+															<td>Headset</td>
+															<td class="text-right">$74.98</td>
+															<td>
+																<div class="d-flex justify-content-end align-items-center">
+																	<a class="" data-toggle="tooltip" data-placement="top"
+																		title="" data-original-title="Edit" href="#">
+																		<svg xmlns="http://www.w3.org/2000/svg"
+																			class="text-secondary mx-4" width="20"
+																			fill="none" viewBox="0 0 24 24"
+																			stroke="currentColor">
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+																		</svg>
+																	</a>
+																	<a class="badge bg-danger" data-toggle="tooltip"
+																		data-placement="top" title=""
+																		data-original-title="Delete" href="#">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20"
+																			fill="none" viewBox="0 0 24 24"
+																			stroke="currentColor">
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+																		</svg>
+																	</a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<hr />
+											<div
+												class="m-0 d-flex align-items-center justify-content-between position-relative">
+												<div class="d-flex col-md-5 mb-3">
+													<label for="Text1"
+														class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase">Invoices</label>
+													<div class="d-flex">
+														<button class="btn mr-1 btn-primary font-weight-bold btn-sm">
+															Assign
+														</button>
+														<button class="btn mr-1 btn-primary font-weight-bold btn-sm">
+														<a style="color: white;" href="../backend/addLeadInvoice.html">
+															New
+														</a>
+														</button>
+													</div>
+												</div>
+	
+											</div>
+											<div class="table-responsive">
+												<table class="table data-table mb-0">
+													<thead class="table-color-heading">
+														<tr>
+															<th scope="col" class="pr-0 w-1">
+																<div
+																	class="d-flex justify-content-start align-items-end mb-1">
+																	<div
+																		class="custom-control custom-checkbox custom-control-inline">
+																		<input type="checkbox"
+																			class="custom-control-input m-0"
+																			id="customCheck1" />
+																		<label class="custom-control-label"
+																			for="customCheck1"></label>
+																	</div>
+																</div>
+															</th>
+															<th scope="col">Invoice Owner</th>
+															<th scope="col">Client Name</th>
+															<th scope="col">Account Name</th>
+															<th scope="col">Product Name</th>
+															<th scope="col">Created On</th>
+															<th scope="col">Due Date</th>
+															<th scope="col" class="text-right">Action</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="white-space-no-wrap">
+															<td class="pr-0">
+																<div
+																	class="custom-control custom-checkbox custom-control-inline">
+																	<input type="checkbox" class="custom-control-input m-0"
+																		id="customCheck" />
+																	<label class="custom-control-label"
+																		for="customCheck"></label>
+																</div>
+															</td>
+															<td>
+																<div class="d-flex align-items-center mt-0">
+																	<div class="data-content">
+																		<div>
+																			<span class="font-weight-bold">Christian
+																				Bale</span>
+																		</div>
+																		<p class="m-0 text-secondary small">
+																			Vari tech
+																		</p>
+																	</div>
+																</div>
+															</td>
+															<td>John</td>
+															<td>Client</td>
+															<td>Migration</td>
+															<td>5/9/2022</td>
+															<td>5/12/2022</td>
+															<td>
+																<div class="d-flex justify-content-end align-items-center">
+																	<a class="" data-toggle="tooltip" data-placement="top"
+																		title="" data-original-title="View"
+																		href="../backend/viewInvoice.html">
+																		<svg xmlns="http://www.w3.org/2000/svg"
+																			class="text-secondary" width="20" fill="none"
+																			viewBox="0 0 24 24" stroke="currentColor">
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+																		</svg>
+																	</a>
+																	<a class="" data-toggle="tooltip" data-placement="top"
+																		title="" data-original-title="Edit"
+																		href="../backend/customer-edit.html">
+																		<svg xmlns="http://www.w3.org/2000/svg"
+																			class="text-secondary mx-4" width="20"
+																			fill="none" viewBox="0 0 24 24"
+																			stroke="currentColor">
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+																		</svg>
+																	</a>
+																	<a class="badge bg-danger" data-toggle="tooltip"
+																		data-placement="top" title=""
+																		data-original-title="Delete" href="#">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20"
+																			fill="none" viewBox="0 0 24 24"
+																			stroke="currentColor">
+																			<path stroke-linecap="round"
+																				stroke-linejoin="round" stroke-width="2"
+																				d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+																		</svg>
+																	</a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
 										</div>
 									</div>
