@@ -1196,6 +1196,66 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <h4 class="font-weight-bold">Clients</h4>
                 </div>
+                <div class="create-workform">
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between"
+                  >
+                    <div class="modal-product-search d-lg-flex">
+                      <form class="mr-3 position-relative">
+                        <div class="form-group mb-0">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputText"
+                            placeholder="Search Customer"
+                          />
+                          <a class="search-link" href="#">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class=""
+                              width="20"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </form>
+                      <div
+                        class="w-100 d-flex justify-content-md-end my-md-2 my-lg-0"
+                      >
+                        <a
+                          href="../backend/addClient.html"
+                          class="btn btn-primary position-relative d-flex align-items-center justify-content-between w-fit"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="mr-2"
+                            width="20"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                            />
+                          </svg>
+                          Add Client
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="row">
                 <div class="col-lg-12">
@@ -1223,6 +1283,7 @@
                           </svg>
                           Export
                         </button>
+                        
                       </div>
                       <div class="table-responsive">
                         <table class="table data-table mb-0">
@@ -1241,7 +1302,7 @@
                                       id="customCheck1"
                                     />
                                     <label
-                                      class="custom-control-label"
+                                      class="custom-control-label mr-1"
                                       for="customCheck1"
                                     ></label>
                                   </div>
@@ -1272,26 +1333,47 @@
                                 </div>
                               </td>
                               <td class="p-0">
-								<a href="../backend/viewClients.html" style="color: black;">
-                                <div
-                                  class="active-project-1 d-flex align-items-center mt-0"
+                                <a
+                                  href="../backend/viewClients.html"
+                                  style="color: black"
                                 >
-                                  <div class="data-content">
-                                    <div>
-                                      <span class="font-weight-bold"
-                                        >Christian Bale</span
-                                      >
+                                  <div
+                                    class="active-project-1 d-flex align-items-center mt-0"
+                                  >
+                                    <div class="data-content">
+                                      <div>
+                                        <span class="font-weight-bold"
+                                          >Christian Bale</span
+                                        >
+                                      </div>
+                                      <p class="m-0 text-secondary small">
+                                        Vari tech
+                                      </p>
                                     </div>
-                                    <p class="m-0 text-secondary small">
-                                      Vari tech
-                                    </p>
                                   </div>
-                                </div>
-							</a>
+                                </a>
                               </td>
-                              <td><a href="../backend/viewClients.html" style="color: black;">christian.Bale@blueberrye.com</a></td>
-                              <td><a href="../backend/viewClients.html" style="color: black;">Ohio, USA</a></td>
-                              <td><a href="../backend/viewClients.html" style="color: black;">+1 (021) 145-2256</a></td>
+                              <td>
+                                <a
+                                  href="../backend/viewClients.html"
+                                  style="color: black"
+                                  >christian.Bale@blueberrye.com</a
+                                >
+                              </td>
+                              <td>
+                                <a
+                                  href="../backend/viewClients.html"
+                                  style="color: black"
+                                  >Ohio, USA</a
+                                >
+                              </td>
+                              <td>
+                                <a
+                                  href="../backend/viewClients.html"
+                                  style="color: black"
+                                  >+1 (021) 145-2256</a
+                                >
+                              </td>
                               <td>
                                 <div
                                   class="d-flex justify-content-end align-items-center"
