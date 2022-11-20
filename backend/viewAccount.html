@@ -1251,9 +1251,9 @@
                             />
                           </div>
                           <div class="list-style-detail ml-4 mr-2">
-                            <h5 class="font-weight-bold">Kate Smith</h5>
+                            <h5 class="font-weight-bold">Christian Bale</h5>
                             <p class="mb-0 mt-1 text-muted">
-                              Botsford and Sons
+                              Ohio, USA
                             </p>
                           </div>
                         </li>
@@ -1306,7 +1306,7 @@
                     <table class="table table-borderless mb-0">
                       <tr>
                         <td class="p-0">
-                          <p class="mb-0 text-muted">Email ID</p>
+                          <p class="mb-0 text-muted">Account Owner</p>
                         </td>
                         <td>
                           <p class="mb-0">kate@yahoo.com</p>
@@ -1314,42 +1314,34 @@
                       </tr>
                       <tr>
                         <td class="p-0">
-                          <p class="mb-0 text-muted">Birthday</p>
+                          <p class="mb-0 text-muted">Account Name</p>
                         </td>
                         <td>
-                          <p class="mb-0">01 Feb 1990</p>
+                          <p class="mb-0">Client</p>
                         </td>
                       </tr>
                       <tr>
                         <td class="p-0">
-                          <p class="mb-0 text-muted">Phone</p>
+                          <p class="mb-0 text-muted">Account Type</p>
                         </td>
                         <td>
-                          <p class="mb-0">+99 8756214524</p>
+                          <p class="mb-0">Primary</p>
                         </td>
                       </tr>
                       <tr>
                         <td class="p-0">
-                          <p class="mb-0 text-muted">Country</p>
+                          <p class="mb-0 text-muted">Account Code</p>
                         </td>
                         <td>
-                          <p class="mb-0">USA</p>
+                          <p class="mb-0">4515</p>
                         </td>
                       </tr>
                       <tr>
                         <td class="p-0">
-                          <p class="mb-0 text-muted">State/Region</p>
+                          <p class="mb-0 text-muted">Account Address</p>
                         </td>
                         <td>
-                          <p class="mb-0">West Virginia</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-0">
-                          <p class="mb-0 text-muted">Address</p>
-                        </td>
-                        <td>
-                          <p class="mb-0">Baker Street, no. 7</p>
+                          <p class="mb-0">Ohio, USA</p>
                         </td>
                       </tr>
                     </table>
@@ -1364,7 +1356,7 @@
                     <li class="pb-2 mb-0 nav-item">
                       <a
                         data-toggle="tab"
-                        class="font-weight-bold text-uppercase px-5 py-2"
+                        class="font-weight-bold text-uppercase px-5 py-2 active"
                         href="#notes"
                         >Notes</a
                       >
@@ -1380,7 +1372,7 @@
                     <li class="pb-2 mb-0 nav-item">
                       <a
                         data-toggle="tab"
-                        class="font-weight-bold text-uppercase px-5 py-2 active"
+                        class="font-weight-bold text-uppercase px-5 py-2"
                         href="#invoice"
                         >Invoices</a
                       >
@@ -1412,208 +1404,210 @@
                   </ul>
 
                   <div class="tab-content">
-					<div id="notes" class="tab-pane fade p-3 show active">
-						<h3 class="mb-3">Notes</h3>
-						<div
-						  class="m-0 d-flex align-items-center justify-content-between position-relative"
-						>
-						  <div class="d-flex col-md-5 mb-3">
-							<label
-							  for="Text1"
-							  class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase"
-							  >Notes</label
-							>
-							<div class="d-flex">
-							  <div>
-								<button
-								  type="button"
-								  class="btn btn-primary font-weight-bold"
-								  data-toggle="modal"
-								  data-target="#ScheduleCall"
-								>
-								  Add Note
-								</button>
-								<!-- Modal -->
-								<div
-								  class="modal fade"
-								  id="ScheduleCall"
-								  tabindex="-1"
-								  role="dialog"
-								  aria-labelledby="exampleModalScrollableTitle"
-								  aria-hidden="true"
-								>
-								  <div
-									class="modal-dialog modal-dialog-scrollable"
-									role="document"
-								  >
-									<div class="modal-content">
-									  <div class="modal-header">
-										<h5
-										  class="modal-title"
-										  id="exampleModalScrollableTitle"
-										>
-										  New Note
-										</h5>
-										<button
-										  type="button"
-										  class="close"
-										  data-dismiss="modal"
-										  aria-label="Close"
-										>
-										  <span aria-hidden="true">&times;</span>
-										</button>
-									  </div>
-									  <div class="modal-body">
-										<table
-										  class="table table-borderless mb-0"
-										>
-											<td class="d-flex p-0 mt-3 mb-3">
-											  <label
-												class="mt-2 mb-2 mr-2"
-												for="myfile"
-												>Select</label
-											  >
-											  <input
-												class="mt-2"
-												type="file"
-												id="myfile"
-												name="myfile"
-											  />
-											</td>
-										  </tr>
-										  <tr>
-											<td class="p-0">
-											  <!-- <img src="../assets/images/avm circle.png" style="height: 45px;"/> -->
-											  <p class="mt-2 text-muted">
-												Enter your note here.
-											  </p>
-											  <textarea
-												class="form-control"
-												id="Text9"
-												rows="2"
-											  >
-											  </textarea>
-											</td>
-										  </tr>
-										</table>
-									  </div>
-									  <div class="modal-footer">
-										<button
-										  type="button"
-										  class="btn btn-secondary"
-										  data-dismiss="modal"
-										>
-										  Cancel
-										</button>
-										<button
-										  type="button"
-										  class="btn btn-primary"
-										>
-										  Send
-										</button>
-									  </div>
-									</div>
-								  </div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						</div>
-					</div>
-					<div id="attachments" class="tab-pane fade p-3">
-						<h3 class="mb-3">Attachments</h3>
-						<div
-						  class="m-0 d-flex align-items-center justify-content-between position-relative"
-						>
-						  <div class="d-flex col-md-5 mb-3">
-							<label
-							  for="Text1"
-							  class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase"
-							  >Attachments</label
-							>
-							<div class="d-flex">
-							  <div>
-								<button
-								  type="button"
-								  class="btn btn-primary font-weight-bold"
-								  data-toggle="modal"
-								  data-target="#ScheduleCall"
-								>
-								  Add Attachment
-								</button>
-								<!-- Modal -->
-								<div
-								  class="modal fade"
-								  id="ScheduleCall"
-								  tabindex="-1"
-								  role="dialog"
-								  aria-labelledby="exampleModalScrollableTitle"
-								  aria-hidden="true"
-								>
-								  <div
-									class="modal-dialog modal-dialog-scrollable"
-									role="document"
-								  >
-									<div class="modal-content">
-									  <div class="modal-header">
-										<h5
-										  class="modal-title"
-										  id="exampleModalScrollableTitle"
-										>
-										  New Attachment
-										</h5>
-										<button
-										  type="button"
-										  class="close"
-										  data-dismiss="modal"
-										  aria-label="Close"
-										>
-										  <span aria-hidden="true">&times;</span>
-										</button>
-									  </div>
-									  <div class="modal-body">
-										<table
-										  class="table table-borderless mb-0"
-										>
-											<td class="d-flex p-0 mt-3 mb-3">
-											  <label
-												class="mt-2 mb-2 mr-2"
-												for="myfile"
-												>Select</label
-											  >
-											  <input
-												class="mt-2"
-												type="file"
-												id="myfile"
-												name="myfile"
-											  />
-											</td>
-										  </tr>
-										</table>
-									  </div>
-									  <div class="modal-footer">
-										<button
-										  type="button"
-										  class="btn btn-secondary"
-										  data-dismiss="modal"
-										>
-										  Cancel
-										</button>
-										<button
-										  type="button"
-										  class="btn btn-primary"
-										>
-										  Send
-										</button>
-									  </div>
-									</div>
-								  </div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						</div>
-					</div>
+                    <div id="notes" class="tab-pane fade p-3 show active">
+                      <h3 class="mb-3">Notes</h3>
+                      <div
+                        class="m-0 d-flex align-items-center justify-content-between position-relative"
+                      >
+                        <div class="d-flex col-md-5 mb-3">
+                          <label
+                            for="Text1"
+                            class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase"
+                            >Notes</label
+                          >
+                          <div class="d-flex">
+                            <div>
+                              <button
+                                type="button"
+                                class="btn btn-primary font-weight-bold"
+                                data-toggle="modal"
+                                data-target="#ScheduleCall"
+                              >
+                                Add Note
+                              </button>
+                              <!-- Modal -->
+                              <div
+                                class="modal fade"
+                                id="ScheduleCall"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalScrollableTitle"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-dialog-scrollable"
+                                  role="document"
+                                >
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5
+                                        class="modal-title"
+                                        id="exampleModalScrollableTitle"
+                                      >
+                                        New Note
+                                      </h5>
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                      >
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <table
+                                        class="table table-borderless mb-0"
+                                      >
+                                        <tr>
+                                          <td class="d-flex p-0 mt-3 mb-3">
+                                            <label
+                                              class="mt-2 mb-2 mr-2"
+                                              for="myfile"
+                                              >Select</label
+                                            >
+                                            <input
+                                              class="mt-2"
+                                              type="file"
+                                              id="myfile"
+                                              name="myfile"
+                                            />
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="p-0">
+                                            <!-- <img src="../assets/images/avm circle.png" style="height: 45px;"/> -->
+                                            <p class="mt-2 text-muted">
+                                              Enter your note here.
+                                            </p>
+                                            <textarea
+                                              class="form-control"
+                                              id="Text9"
+                                              rows="2"
+                                            >
+                                            </textarea>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-dismiss="modal"
+                                      >
+                                        Cancel
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                      >
+                                        Send
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="attachments" class="tab-pane fade p-3">
+                      <h3 class="mb-3">Attachments</h3>
+                      <div
+                        class="m-0 d-flex align-items-center justify-content-between position-relative"
+                      >
+                        <div class="d-flex col-md-5 mb-3">
+                          <label
+                            for="Text1"
+                            class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase"
+                            >Attachments</label
+                          >
+                          <div class="d-flex">
+                            <div>
+                              <button
+                                type="button"
+                                class="btn btn-primary font-weight-bold"
+                                data-toggle="modal"
+                                data-target="#ScheduleCall"
+                              >
+                                Add Attachment
+                              </button>
+                              <!-- Modal -->
+                              <div
+                                class="modal fade"
+                                id="ScheduleCall"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalScrollableTitle"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-dialog-scrollable"
+                                  role="document"
+                                >
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5
+                                        class="modal-title"
+                                        id="exampleModalScrollableTitle"
+                                      >
+                                        New Attachment
+                                      </h5>
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                      >
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <table
+                                        class="table table-borderless mb-0"
+                                      >
+                                        <tr>
+                                          <td class="d-flex p-0 mt-3 mb-3">
+                                            <label
+                                              class="mt-2 mb-2 mr-2"
+                                              for="myfile"
+                                              >Select</label
+                                            >
+                                            <input
+                                              class="mt-2"
+                                              type="file"
+                                              id="myfile"
+                                              name="myfile"
+                                            />
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-dismiss="modal"
+                                      >
+                                        Cancel
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                      >
+                                        Send
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div id="invoice" class="tab-pane fade p-3">
                       <div
                         class="mt-3 d-flex align-items-center justify-content-between position-relative"
