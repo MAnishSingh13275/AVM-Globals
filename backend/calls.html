@@ -1275,14 +1275,18 @@
                                         <label
                                           for="inputState"
                                           class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Call To</label
+                                          >Call To
+                                          <select style="border: none">
+                                            <option value="">Lead</option>
+                                            <option value="">Client</option>
+                                          </select></label
                                         >
                                         <input
                                           type="text"
                                           class="form-control"
                                           id="Text2"
                                           name="event_date"
-                                          placeholder="Lead / Client"
+                                          placeholder=""
                                           autocomplete="off"
                                         />
                                       </div>
@@ -1290,7 +1294,12 @@
                                         <label
                                           for="inputState"
                                           class="form-label font-weight-bold text-muted text-uppercase"
-                                          >Related To</label
+                                          >Related To
+                                          <select style="border: none">
+                                            <option value="">Account</option>
+                                            <option value="">Quote</option>
+                                            <option value="">Invoice</option>
+                                          </select></label
                                         >
                                         <input
                                           type="text"
@@ -1307,14 +1316,15 @@
                                           class="form-label font-weight-bold text-muted text-uppercase"
                                           >Call Type</label
                                         >
-                                        <input
-                                          type="text"
-                                          class="form-control"
-                                          id="Text2"
-                                          name="event_date"
-                                          placeholder="Enter Call Type"
-                                          autocomplete="off"
-                                        />
+                                        <select
+                                          id=""
+                                          class="form-select form-control choicesjs"
+                                        >
+                                          <option value="" selected>
+                                            Outbound
+                                          </option>
+                                          <option value="">Inbound</option>
+                                        </select>
                                       </div>
                                       <div class="col-md-6 mb-3">
                                         <label
@@ -1322,8 +1332,13 @@
                                           class="form-label font-weight-bold text-muted text-uppercase"
                                           >Outgoing Call Status</label
                                         >
-                                        <select style="border: none">
-                                          <option value="">Scheduled</option>
+                                        <select
+                                          id=""
+                                          class="form-select form-control choicesjs"
+                                        >
+                                          <option value="" selected>
+                                            Scheduled
+                                          </option>
                                           <option value="">Waiting</option>
                                           <option value="">Pending</option>
                                         </select>
@@ -1363,7 +1378,7 @@
                                         </span>
                                       </div>
                                       <div
-                                        class="col-md-6 mb-3 position-relative"
+                                        class="col-md-6 mb-8 position-relative"
                                       >
                                         <label
                                           for="inputState"
@@ -1375,7 +1390,7 @@
                                           class="form-control timepicker"
                                           id="Text2"
                                           name="event_date"
-                                          placeholder="Enter"
+                                          placeholder="Enter Start Time"
                                           autocomplete="off"
                                         />
                                         <span class="search-link">
@@ -1396,20 +1411,22 @@
                                           </svg>
                                         </span>
                                       </div>
-									  <div class="col-md-6 mb-3">
+                                      <div class="col-md-12 mb-3">
                                         <label
                                           for="inputState"
                                           class="form-label font-weight-bold text-muted text-uppercase"
                                           >Call Purpose</label
                                         >
-                                        <select
-                                          id="inputcountry"
-                                          class="form-select form-control choicesjs"
-                                        >
-                                          <option value="">None</option>
-                                        </select>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="Text2"
+                                          name="event_date"
+                                          placeholder="Enter Call Purpose"
+                                          autocomplete="off"
+                                        />
                                       </div>
-									  <div class="col-md-6 mb-3">
+                                      <div class="col-md-12 mb-3">
                                         <label
                                           for="inputState"
                                           class="form-label font-weight-bold text-muted text-uppercase"
@@ -1447,14 +1464,14 @@
                     </div>
                   </div>
                   <div>
-                    <button
+                    <!-- <button
                       type="button"
                       class="btn btn-primary mt-2"
                       data-toggle="modal"
                       data-target="#LogCalls"
                     >
                       Log Calls
-                    </button>
+                    </button> -->
                     <!-- Modal -->
                     <div
                       class="modal fade"
@@ -1681,7 +1698,6 @@
                               <th scope="col">Subject</th>
                               <th scope="col">Call Type</th>
                               <th scope="col">Call Start Time</th>
-                              <th scope="col">Call Duration</th>
                               <th scope="col">Related To</th>
                               <th scope="col">Call Owner</th>
                               <th scope="col" class="text-right">Action</th>
@@ -1706,42 +1722,51 @@
                               </td>
                               <td>
                                 <a
-                                href="../backend/viewCall.html"
-                                style="color: black"
-                              >
-                                <div class="d-flex align-items-center mt-0">
-                                  <div class="data-content">
-                                    <div>
-                                      <span class="font-weight-bold"
-                                        >Follow up with Lead</span
-                                      >
+                                  href="../backend/viewCall.html"
+                                  style="color: black"
+                                >
+                                  <div class="d-flex align-items-center mt-0">
+                                    <div class="data-content">
+                                      <div>
+                                        <span class="font-weight-bold"
+                                          >Follow up with Lead</span
+                                        >
+                                      </div>
+                                      <p class="m-0 text-secondary small">
+                                        Vari tech
+                                      </p>
                                     </div>
-                                    <p class="m-0 text-secondary small">
-                                      Vari tech
-                                    </p>
-                                  </div>
-                                </div></a>
+                                  </div></a
+                                >
                               </td>
-                              <td><a
-                                href="../backend/viewCall.html"
-                                style="color: black"
-                              >Outbound</a></td>
-                              <td><a
-                                href="../backend/viewCall.html"
-                                style="color: black"
-                              >Nov 7, 2022 09:30 AM</a></td>
-                              <td><a
-                                href="../backend/viewCall.html"
-                                style="color: black"
-                              >20 mins</a></td>
-                              <td><a
-                                href="../backend/viewCall.html"
-                                style="color: black"
-                              >School</a></td>
-                              <td><a
-                                href="../backend/viewCall.html"
-                                style="color: black"
-                              >Rajesh</a></td>
+                              <td>
+                                <a
+                                  href="../backend/viewCall.html"
+                                  style="color: black"
+                                  >Outbound</a
+                                >
+                              </td>
+                              <td>
+                                <a
+                                  href="../backend/viewCall.html"
+                                  style="color: black"
+                                  >Nov 7, 2022 09:30 AM</a
+                                >
+                              </td>
+                              <td>
+                                <a
+                                  href="../backend/viewCall.html"
+                                  style="color: black"
+                                  >School</a
+                                >
+                              </td>
+                              <td>
+                                <a
+                                  href="../backend/viewCall.html"
+                                  style="color: black"
+                                  >Rajesh</a
+                                >
+                              </td>
                               <td>
                                 <div
                                   class="d-flex justify-content-end align-items-center"
