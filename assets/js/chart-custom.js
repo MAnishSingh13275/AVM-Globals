@@ -5162,10 +5162,10 @@ if(typeof $.fn.magnificPopup !== typeof undefined){
     },
     xaxis: {
       categories: [
-        ['India'],
-        ['U.S.A'],
-        ['Canada'],
-        ['Africa'], 
+        ['Google'],
+        ['Facebook'],
+        ['Instagram'],
+        ['Other Social Media'], 
       ],
       labels: {
         style: {

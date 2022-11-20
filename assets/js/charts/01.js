@@ -569,7 +569,7 @@
             
           },
          
-          labels: ["India","China", "United States", "Others"],
+          labels: ["Google","Facebook", "Instagram", "Other Social Media"],
           colors: ['#ffbb33', '#04237D', '#e60000', '#8080ff'],
           plotOptions: {
             pie: {
