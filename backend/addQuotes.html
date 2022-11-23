@@ -375,7 +375,7 @@
 									<span class="ml-2">Invoice</span>
 								</a>
 							</li>
-							<li class="sidebar-layout">
+							<!-- <li class="sidebar-layout">
 								<a href="../backend/reports.html" class="svg-icon">
 									<i class="">
 										<svg
@@ -412,7 +412,7 @@
 										</svg> </i
 									><span class="ml-2">Social</span>
 								</a>
-							</li>
+							</li> -->
 							<li class="sidebar-layout">
 								<a href="../app/chat.html" class="svg-icon">
 									<i class="">
@@ -1270,19 +1270,20 @@
 													<label
 														for="inputState"
 														class="form-label font-weight-bold text-muted text-uppercase"
-														>Client Name</label
+														><select style="border: none;">
+															<option>Client</option>
+															<option>Lead</option>
+														</select></label
 													>
-													<select
-														id="inputClientName"
-														class="form-select form-control choicesjs"
-													>
-														<option class="">Select Name</option>
-														<option value="USA" selected>Name1</option>
-														<option value="UK">Name2</option>
-														<option value="France">Name3</option>
-													</select>
+													<input
+														type="text"
+														class="form-control"
+														id="Text1"
+														placeholder="Enter Name"
+														value=""
+													/>
 												</div>
-												<div class="col-md-5 mx-5 mb-3">
+												<!-- <div class="col-md-5 mx-5 mb-3">
 													<label
 														for="inputState"
 														class="form-label font-weight-bold text-muted text-uppercase"
@@ -1297,7 +1298,7 @@
 														<option value="UK">Name2</option>
 														<option value="France">Name3</option>
 													</select>
-												</div>
+												</div> -->
 
 												<div class="col-md-5 mx-5 mb-3">
 													<label
@@ -1348,128 +1349,125 @@
 														</svg>
 													</span>
 												</div>
+												<div class="col-md-5 mx-5 my-2">
+													<label
+													  for="Text9"
+													  class="form-label font-weight-bold text-muted text-uppercase"
+													  >Terms & Conditions</label
+													><input
+													  type="text"
+													  class="form-control"
+													  id="Text1"
+													  placeholder="Enter Terms & Conditions"
+													  value=""
+													/>
+												  </div>
 												<div class="col-md-12 mx-5">
 													<label
-														for="inputAddress"
-														class="form-label font-weight-bold text-muted text-uppercase"
-														>Address</label
+													  for="inputAddress"
+													  class="form-label font-weight-bold text-muted text-uppercase"
+													  >Address</label
 													>
-												</div>
-												<div class="row col-md-5 mx-5 mb-5">
-													<div class="col-md-6 my-2">
-														<label
-															for="inputHouseNo"
-															class="form-label font-weight-normal text-muted text-uppercase"
-															>House No.</label
-														>
-														<input
-															type="number"
-															class="form-control"
-															id="Text1"
-															placeholder="Enter House No."
-															value=""
-														/>
-													</div>
-													<div class="col-md-6 my-2">
-														<label
-															for="inputzip"
-															class="form-label font-weight-normal text-muted text-uppercase"
-															>Street</label
-														>
-														<input
-															type="text"
-															class="form-control"
-															id="Text1"
-															placeholder="Enter Street"
-															value=""
-														/>
-													</div>
-													<div class="col-md-6 my-2">
-														<label
-															for="inputzip"
-															class="form-label font-weight-normal text-muted text-uppercase"
-															>Zip</label
-														>
-														<input
-															type="number"
-															class="form-control"
-															id="Text1"
-															placeholder="Enter Post Code"
-															value=""
-														/>
-													</div>
-													<div class="col-md-6 my-2">
-														<label
-															for="inputzip"
-															class="form-label font-weight-normal text-muted text-uppercase"
-															>Locality</label
-														>
-														<input
-															type="text"
-															class="form-control"
-															id="Text1"
-															placeholder="Enter Locality"
-															value=""
-														/>
-													</div>
-													
-														<div class="col-md-6 my-2">
-															<label
-																for="inputzip"
-																class="form-label font-weight-normal text-muted text-uppercase"
-																>State</label
-															>
-															<input
-																type="text"
-																class="form-control"
-																id="Text1"
-																placeholder="Enter State"
-																value=""
-															/>
-													</div>
-													<div class="col-md-6 my-2">
-														<label
-															for="City"
-															class="form-label font-weight-normal text-muted text-uppercase"
-															>City</label
-														>
-														<input
-															type="text"
-															class="form-control"
-															id="Text1"
-															placeholder="Enter City Name"
-															value=""
-														/>
-													</div>
-													<div class="col-md-6 my-2">
-														<label
-															for="inputzip"
-															class="form-label font-weight-normal text-muted text-uppercase"
-															>Country</label
-														>
-														<input
-															type="text"
-															class="form-control"
-															id="Text1"
-															placeholder="Enter Country"
-															value=""
-														/>
-													</div>
-												</div>
-												<div class="col-md-5 mx-5 mb-3">
-													<label
-														for="Text9"
-														class="form-label font-weight-bold text-muted text-uppercase"
-														>Terms and Conditon</label
-													>
-													<textarea
+												  </div>
+												  <div class="row col-md-11 mx-5">
+													<div class="col-md-3 my-2">
+													  <label
+														for="inputHouseNo"
+														class="form-label font-weight-normal text-muted text-uppercase"
+														>House No.</label
+													  >
+													  <input
+														type="number"
 														class="form-control"
-														id="Text9"
-														rows="2"
-														placeholder="Enter Terms and Conditon"
-													>
-													</textarea>
-												</div>
+														id="Text1"
+														placeholder="Enter House No."
+														value=""
+													  />
+													</div>
+													<div class="col-md-3 my-2">
+													  <label
+														for="inputHouseNo"
+														class="form-label font-weight-normal text-muted text-uppercase"
+														>Street</label
+													  >
+													  <input
+														type="text"
+														class="form-control"
+														id="Text1"
+														placeholder="Enter Street"
+														value=""
+													  />
+													</div>
+													<div class="col-md-3 my-2">
+													  <label
+														for="inputzip"
+														class="form-label font-weight-normal text-muted text-uppercase"
+														>Locality</label
+													  >
+													  <input
+														type="text"
+														class="form-control"
+														id="Text1"
+														placeholder="Enter Locality"
+														value=""
+													  />
+													</div>
+													<div class="col-md-3 my-2">
+													  <label
+														for="inputzip"
+														class="form-label font-weight-normal text-muted text-uppercase"
+														>Post Code</label
+													  >
+													  <input
+														type="number"
+														class="form-control"
+														id="Text1"
+														placeholder="Enter Post Code"
+														value=""
+													  />
+													</div>
+													<div class="col-md-3 my-2">
+													  <label
+														for="State"
+														class="form-label font-weight-normal text-muted text-uppercase"
+														>State</label
+													  ><input
+														type="text"
+														class="form-control"
+														id="Text1"
+														placeholder="Enter State Name"
+														value=""
+													  />
+													</div>
+													<div class="col-md-3 my-2">
+													  <label
+														for="City"
+														class="form-label font-weight-normal text-muted text-uppercase"
+														>City</label
+													  >
+													  `<input
+														type="text"
+														class="form-control"
+														id="Text1"
+														placeholder="Enter City Name"
+														value=""
+													  />
+													</div>
+													<div class="col-md-3 my-2">
+													  <label
+														for="Country"
+														class="form-label font-weight-normal text-muted text-uppercase"
+														>Country</label
+													  ><input
+														type="text"
+														class="form-control"
+														id="Text1"
+														placeholder="Enter Country Name"
+														value=""
+													  />
+													</div>
+												  </div>
+												  
 											</form>
 											<div class="d-flex justify-content-end mx-5 mt-3">
 												<button
@@ -1518,7 +1516,7 @@
 								document.write(new Date().getFullYear());
 							</script>
 							© <a href="#" class="">AVM Global</a>
-							Powered By <a href="https://www.krayon.com.au/" class="">Krayon</a>
+							Powered By <a href="https://www.krayon.com.au/" target="_blank" class="">Krayon</a>
 						</span>
 					</div>
 				</div>
