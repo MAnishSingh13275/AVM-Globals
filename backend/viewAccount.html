@@ -1252,9 +1252,7 @@
                           </div>
                           <div class="list-style-detail ml-4 mr-2">
                             <h5 class="font-weight-bold">Christian Bale</h5>
-                            <p class="mb-0 mt-1 text-muted">
-                              Ohio, USA
-                            </p>
+                            <p class="mb-0 mt-1 text-muted">Ohio, USA</p>
                           </div>
                         </li>
                       </ul>
@@ -1379,6 +1377,14 @@
                         class="font-weight-bold text-uppercase px-5 py-2"
                         href="#products"
                         >Products</a
+                      >
+                    </li>
+                    <li class="pb-2 mb-0 nav-item">
+                      <a
+                        data-toggle="tab"
+                        class="font-weight-bold text-uppercase px-5 py-2"
+                        href="#assign"
+                        >Assign</a
                       >
                     </li>
                   </ul>
@@ -1837,66 +1843,73 @@
                                   ></label>
                                 </div>
                               </td>
-                              <td><a
-                                href="../backend/viewProducts.html"
-                                style="color: black"
-                              >
-                                <div
-                                  class="d-flex align-items-center mt-0"
+                              <td>
+                                <a
+                                  href="../backend/viewProducts.html"
+                                  style="color: black"
                                 >
-                                  <div class="data-content">
-                                    <div>
-                                      <span class="font-weight-bold"
-                                        >Bassheads 220 Wired Headset</span
-                                      >
+                                  <div class="d-flex align-items-center mt-0">
+                                    <div class="data-content">
+                                      <div>
+                                        <span class="font-weight-bold"
+                                          >Bassheads 220 Wired Headset</span
+                                        >
+                                      </div>
+                                      <p class="m-0 mt-1">
+                                        Molten Orange, In the Ear
+                                      </p>
                                     </div>
-                                    <p class="m-0 mt-1">
-                                      Molten Orange, In the Ear
-                                    </p>
-                                  </div>
-                                </div></a>
+                                  </div></a
+                                >
                               </td>
-                              <td><a
-                                href="../backend/viewProducts.html"
-                                style="color: black"
-                              >Headset</a></td>
-                              <td><a
-                                href="../backend/viewProducts.html"
-                                style="color: black"
-                              >$74.98</a></td>
+                              <td>
+                                <a
+                                  href="../backend/viewProducts.html"
+                                  style="color: black"
+                                  >Headset</a
+                                >
+                              </td>
+                              <td>
+                                <a
+                                  href="../backend/viewProducts.html"
+                                  style="color: black"
+                                  >$74.98</a
+                                >
+                              </td>
                               <td>
                                 <div
                                   class="d-flex justify-content-end align-items-center"
-                                ><a
-                                class=""
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title=""
-                                data-original-title="View"
-                                href="../backend/viewProducts.html"
-                              >
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  class="text-secondary"
-                                  width="20"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
                                 >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                  />
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                                  />
-                                </svg>
-                              </a>
+                                  <a
+                                    class=""
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title=""
+                                    data-original-title="View"
+                                    href="../backend/viewProducts.html"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="text-secondary"
+                                      width="20"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor"
+                                    >
+                                      <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                      />
+                                      <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                      />
+                                    </svg>
+                                  </a>
                                   <a
                                     class=""
                                     data-toggle="tooltip"
@@ -2281,6 +2294,35 @@
                         </table>
                       </div>
                     </div>
+                    <div id="assign" class="tab-pane fade p-3">
+                      <div
+                        class="m-0 d-flex align-items-center justify-content-between position-relative"
+                      >
+                        <div class="d-flex col-md-5 mb-3">
+                          <label
+                            for="Text1"
+                            class="form-label font-weight-bold mt-2 mb-2 mr-3 text-muted text-uppercase"
+                            ><select style="border: none">
+                              <option value="" selected>Select User</option>
+                              <option value="">Will</option>
+                              <option value="">Steven</option>
+                            </select></label
+                          >
+
+                          <div class="d-flex">
+                            <button
+                              class="btn mr-1 btn-primary font-weight-bold btn-sm"
+                            >
+                              <a
+                                style="color: white"
+                                href="#"
+                                >Assign</a
+                              >
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2304,15 +2346,17 @@
             </ul>
           </div>
           <div class="col-lg-6 text-right">
-						<span class="mr-1">
-							Copyright
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							© <a href="#" class="">AVM Global</a>
-							Powered By <a href="https://www.krayon.com.au/" target="_blank" class="">Krayon</a>
-						</span>
-					</div>
+            <span class="mr-1">
+              Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              © <a href="#" class="">AVM Global</a> Powered By
+              <a href="https://www.krayon.com.au/" target="_blank" class=""
+                >Krayon</a
+              >
+            </span>
+          </div>
         </div>
       </div>
     </footer>
