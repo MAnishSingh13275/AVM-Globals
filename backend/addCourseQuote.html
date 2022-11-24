@@ -143,7 +143,7 @@
 									<span class="ml-2">Institutes</span>
 								</a>
 							</li>
-							<li class="sidebar-layout">
+							<li class="active sidebar-layout">
 								<a href="../backend/courses.html" class="svg-icon">
 									<i class="">
 										<svg
@@ -216,7 +216,7 @@
 									><span class="ml-2">User</span>
 								</a>
 							</li>
-							<li class="active sidebar-layout">
+							<li class="sidebar-layout">
 								<a href="../backend/accounts.html" class="svg-icon">
 									<i class="">
 										<svg
@@ -375,7 +375,7 @@
 									<span class="ml-2">Invoice</span>
 								</a>
 							</li>
-							<!-- <li class="sidebar-layout">
+							<li class="sidebar-layout">
 								<a href="../backend/reports.html" class="svg-icon">
 									<i class="">
 										<svg
@@ -412,7 +412,7 @@
 										</svg> </i
 									><span class="ml-2">Social</span>
 								</a>
-							</li> -->
+							</li>
 							<li class="sidebar-layout">
 								<a href="../app/chat.html" class="svg-icon">
 									<i class="">
@@ -1197,16 +1197,16 @@
 									<nav aria-label="breadcrumb">
 										<ol class="breadcrumb p-0 mb-0">
 											<li class="breadcrumb-item">
-												<a href="../backend/accounts.html">Account</a>
+												<a href="../backend/viewCourse.html">Course View</a>
 											</li>
 											<li class="breadcrumb-item active" aria-current="page">
-												Add Account
+												Add Quote
 											</li>
 										</ol>
 									</nav>
 								</div>
 								<a
-									href="../backend/accounts.html"
+									href="../backend/viewCourse.html"
 									class="btn btn-primary btn-sm d-flex align-items-center justify-content-between ml-2"
 								>
 									<svg
@@ -1227,7 +1227,7 @@
 						</div>
 						<div class="col-lg-12 mb-3 d-flex justify-content-between">
 							<h4 class="font-weight-bold d-flex align-items-center">
-								Add Account
+								Add Quotes
 							</h4>
 						</div>
 						<div class="col-lg-12">
@@ -1240,13 +1240,13 @@
 													<label
 														for="inputState"
 														class="form-label font-weight-bold text-muted text-uppercase"
-														>Account Owner</label
+														>Quote Owner</label
 													>
 													<select
 														id="inputcountry"
 														class="form-select form-control choicesjs"
 													>
-														<option class="">Select</option>
+														<option class="">Select Owner</option>
 														<option value="USA" selected>Owner1</option>
 														<option value="UK">Owner2</option>
 														<option value="France">Owner3</option>
@@ -1256,62 +1256,113 @@
 													<label
 														for="Text1"
 														class="form-label font-weight-bold text-muted text-uppercase"
-														>Account Name</label
+														>Subject</label
 													>
 													<input
 														type="text"
 														class="form-control"
 														id="Text1"
-														placeholder="Enter Account Name"
+														placeholder="Enter Subject"
 														value=""
 													/>
 												</div>
 												<div class="col-md-5 mx-5 mb-3">
 													<label
-														for="Text1"
+														for="inputState"
 														class="form-label font-weight-bold text-muted text-uppercase"
-														>Account Code</label
-													>
-													<input
-														type="number"
-														class="form-control"
-														id="Text1"
-														placeholder="Enter Account Code"
-														value=""
-													/>
-												</div>
-												<div class="col-md-5 mx-5 mb-3">
-													<label
-														for="inputAccountType"
-														class="form-label font-weight-bold text-muted text-uppercase"
-														>Account Type</label
+														>Client Name</label
 													>
 													<select
-														id="inputAccountType"
+														id="inputClientName"
 														class="form-select form-control choicesjs"
 													>
-														<option class=""  selected>Select</option>
-														<option value="Name1">Default</option>
-														<option value="Name2">Vendor</option>
-														<option value="Name3">Individual</option>
+														<option class="">Select Name</option>
+														<option value="USA" selected>Name1</option>
+														<option value="UK">Name2</option>
+														<option value="France">Name3</option>
 													</select>
 												</div>
-												<div class="col-md- mx-5">
+												<div class="col-md-5 mx-5 mb-3">
+													<label
+														for="inputState"
+														class="form-label font-weight-bold text-muted text-uppercase"
+														>Account Name</label
+													>
+													<select
+														id="inputAccountName"
+														class="form-select form-control choicesjs"
+													>
+														<option class="">Select Name</option>
+														<option value="USA" selected>Name1</option>
+														<option value="UK">Name2</option>
+														<option value="France">Name3</option>
+													</select>
+												</div>
+
+												<div class="col-md-5 mx-5 mb-3">
+													<label
+														for="inputState"
+														class="form-label font-weight-bold text-muted text-uppercase"
+														>Product Name</label
+													>
+													<select
+														id="inputcountry"
+														class="form-select form-control choicesjs"
+													>
+														<option class="">Select Name</option>
+														<option value="Name1" selected>Name1</option>
+														<option value="Name2">Name2</option>
+														<option value="Name3">Name3</option>
+													</select>
+												</div>
+												<div class="col-md-5 mx-5 mb-3 position-relative">
+													<label
+														for="Text2"
+														class="form-label font-weight-bold text-muted text-uppercase"
+														>Valid Untill</label
+													>
+													<input
+														type="text"
+														class="form-control vanila-datepicker"
+														id="Text2"
+														name="event_date"
+														placeholder="Enter Birth Day"
+														autocomplete="off"
+														value="05/15/2021"
+													/>
+													<span class="search-link">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															class=""
+															width="20"
+															fill="none"
+															viewBox="0 0 24 24"
+															stroke="currentColor"
+														>
+															<path
+																stroke-linecap="round"
+																stroke-linejoin="round"
+																stroke-width="2"
+																d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+															/>
+														</svg>
+													</span>
+												</div>
+												<div class="col-md-12 mx-5">
 													<label
 														for="inputAddress"
 														class="form-label font-weight-bold text-muted text-uppercase"
 														>Address</label
 													>
 												</div>
-												<div class="row col-md-11 mx-5">
-													<div class="col-md-3 my-2">
+												<div class="row col-md-5 mx-5 mb-5">
+													<div class="col-md-6 my-2">
 														<label
 															for="inputHouseNo"
 															class="form-label font-weight-normal text-muted text-uppercase"
 															>House No.</label
 														>
 														<input
-														required
 															type="number"
 															class="form-control"
 															id="Text1"
@@ -1319,9 +1370,9 @@
 															value=""
 														/>
 													</div>
-													<div class="col-md-3 my-2">
+													<div class="col-md-6 my-2">
 														<label
-															for="inputHouseNo"
+															for="inputzip"
 															class="form-label font-weight-normal text-muted text-uppercase"
 															>Street</label
 														>
@@ -1333,7 +1384,7 @@
 															value=""
 														/>
 													</div>
-													<div class="col-md-3 my-2">
+													<div class="col-md-6 my-2">
 														<label
 															for="inputzip"
 															class="form-label font-weight-normal text-muted text-uppercase"
@@ -1347,7 +1398,7 @@
 															value=""
 														/>
 													</div>
-													<div class="col-md-3 my-2">
+													<div class="col-md-6 my-2">
 														<label
 															for="inputzip"
 															class="form-label font-weight-normal text-muted text-uppercase"
@@ -1361,26 +1412,27 @@
 															value=""
 														/>
 													</div>
-													<div class="col-md-3 my-2">
+													<div class="col-md-6 my-2">
 														<label
 															for="State"
 															class="form-label font-weight-normal text-muted text-uppercase"
 															>State</label
-														><input
+														>
+														<input
 															type="text"
 															class="form-control"
 															id="Text1"
-															placeholder="Enter State Name"
+															placeholder="Enter State"
 															value=""
 														/>
 													</div>
-													<div class="col-md-3 my-2">
+													<div class="col-md-6 my-2">
 														<label
 															for="City"
 															class="form-label font-weight-normal text-muted text-uppercase"
 															>City</label
 														>
-														`<input
+														<input
 															type="text"
 															class="form-control"
 															id="Text1"
@@ -1388,12 +1440,13 @@
 															value=""
 														/>
 													</div>
-													<div class="col-md-3 my-2">
+													<div class="col-md-6 my-2">
 														<label
-															for="Country"
+															for="inputzip"
 															class="form-label font-weight-normal text-muted text-uppercase"
 															>Country</label
-														><input
+														>
+														<input
 															type="text"
 															class="form-control"
 															id="Text1"
@@ -1402,17 +1455,17 @@
 														/>
 													</div>
 												</div>
-												<div class="col-md-12 mx-5 my-3">
+												<div class="col-md-5 mx-5 mb-3">
 													<label
 														for="Text9"
 														class="form-label font-weight-bold text-muted text-uppercase"
-														>Description</label
+														>Terms and Conditon</label
 													>
 													<textarea
 														class="form-control"
 														id="Text9"
 														rows="2"
-														placeholder="Enter Description"
+														placeholder="Enter Terms and Conditon"
 													>
 													</textarea>
 												</div>
@@ -1421,12 +1474,17 @@
 												<button
 													class="btn mx-1 btn-primary font-weight-bold btn-sm"
 												>
-													Save & New Account
+													Save & New Quote
 												</button>
 												<button
 													class="btn mx-1 btn-primary font-weight-bold btn-sm"
 												>
-													Save Account
+													Save Quote
+												</button>
+												<button
+													class="btn mx-1 btn-primary font-weight-bold btn-sm"
+												>
+													Send Mail
 												</button>
 											</div>
 										</div>
