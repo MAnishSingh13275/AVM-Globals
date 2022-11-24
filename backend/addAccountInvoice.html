@@ -1243,6 +1243,7 @@
                             >Invoice Owner</label
                           >
                           <select
+                          required
                             id="inputcountry"
                             class="form-select form-control choicesjs"
                           >
@@ -1259,6 +1260,7 @@
                             >Client Name</label
                           >
                           <select
+                          required
                             id="inputClientName"
                             class="form-select form-control choicesjs"
                           >
@@ -1275,6 +1277,7 @@
                             >Account Name</label
                           >
                           <select
+                          required
                             id="inputAccountName"
                             class="form-select form-control choicesjs"
                           >
@@ -1291,12 +1294,13 @@
                             >Product Name</label
                           >
                           <input
-															type="text"
-															class="form-control"
-															id="Text1"
-															placeholder="Enter Product Name"
-															value=""
-														/>
+                          required
+                            type="text"
+                            class="form-control"
+                            id="Text1"
+                            placeholder="Enter Product Name"
+                            value=""
+                          />
                         </div>
                         <div class="col-md-5 mx-5 mb-3 position-relative">
                           <label
@@ -1305,6 +1309,7 @@
                             >Date of Creation</label
                           >
                           <input
+                          required
                             type="text"
                             class="form-control vanila-datepicker"
                             id="Text2"
@@ -1339,6 +1344,7 @@
                           >
                           <input
                             type="text"
+                            required
                             class="form-control vanila-datepicker"
                             id="Text2"
                             name="event_date"
@@ -1364,32 +1370,34 @@
                             </svg>
                           </span>
                         </div>
-						<div class="col-md-5 mx-5 my-2">
-							<label
-							  for="Text9"
-							  class="form-label font-weight-bold text-muted text-uppercase"
-							  >Enquiry Type</label
-							><input
-							  type="text"
-							  class="form-control"
-							  id="Text1"
-							  placeholder="Enter Enquiry Type"
-							  value=""
-							/>
-						  </div>
-						  <div class="col-md-5 mx-5 my-2">
-							<label
-							  for="Text9"
-							  class="form-label font-weight-bold text-muted text-uppercase"
-							  >Terms & Conditions</label
-							><input
-							  type="text"
-							  class="form-control"
-							  id="Text1"
-							  placeholder="Enter Terms & Conditions"
-							  value=""
-							/>
-						  </div>
+                        <div class="col-md-5 mx-5 my-2">
+                          <label
+                            for="Text9"
+                            class="form-label font-weight-bold text-muted text-uppercase"
+                            >Enquiry Type</label
+                          ><input
+                            type="text"
+                            class="form-control"
+                            required
+                            id="Text1"
+                            placeholder="Enter Enquiry Type"
+                            value=""
+                          />
+                        </div>
+                        <div class="col-md-5 mx-5 my-2">
+                          <label
+                            for="Text9"
+                            class="form-label font-weight-bold text-muted text-uppercase"
+                            >Terms & Conditions</label
+                          ><input
+                            type="text"
+                            class="form-control"
+                            required
+                            id="Text1"
+                            placeholder="Enter Terms & Conditions"
+                            value=""
+                          />
+                        </div>
                         <div class="col-md-12 mx-5 mt-3">
                           <label
                             for="inputAddress"
@@ -1406,6 +1414,7 @@
                             >
                             <input
                               type="number"
+                              required
                               class="form-control"
                               id="Text1"
                               placeholder="Enter House No."
@@ -1420,6 +1429,7 @@
                             >
                             <input
                               type="text"
+                              required
                               class="form-control"
                               id="Text1"
                               placeholder="Enter Street"
@@ -1434,6 +1444,7 @@
                             >
                             <input
                               type="text"
+                              required
                               class="form-control"
                               id="Text1"
                               placeholder="Enter Locality"
@@ -1444,10 +1455,11 @@
                             <label
                               for="inputzip"
                               class="form-label font-weight-normal text-muted text-uppercase"
-                              >Zip</label
+                              >Post Code</label
                             >
                             <input
                               type="number"
+                              required
                               class="form-control"
                               id="Text1"
                               placeholder="Enter Post Code"
@@ -1461,6 +1473,7 @@
                               >State</label
                             ><input
                               type="text"
+                              required
                               class="form-control"
                               id="Text1"
                               placeholder="Enter City Name"
@@ -1477,6 +1490,7 @@
                               type="text"
                               class="form-control"
                               id="Text1"
+                              required
                               placeholder="Enter City Name"
                               value=""
                             />
@@ -1489,6 +1503,7 @@
                             ><input
                               type="text"
                               class="form-control"
+                              required
                               id="Text1"
                               placeholder="Enter Country Name"
                               value=""
@@ -1551,15 +1566,24 @@
             </ul>
           </div>
           <div class="col-lg-6 text-right">
-						<span class="mr-1">
-							Copyright
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							© <a href="https://avm-globals.netlify.app/" class="" target="_blank">AVM Global</a>
-							Powered By <a href="https://www.krayon.com.au/" target="_blank" class="">Krayon</a>
-						</span>
-					</div>
+            <span class="mr-1">
+              Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              ©
+              <a
+                href="https://avm-globals.netlify.app/"
+                class=""
+                target="_blank"
+                >AVM Global</a
+              >
+              Powered By
+              <a href="https://www.krayon.com.au/" target="_blank" class=""
+                >Krayon</a
+              >
+            </span>
+          </div>
         </div>
       </div>
     </footer>

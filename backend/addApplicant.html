@@ -1244,10 +1244,14 @@
                             class="form-label font-weight-bold text-muted text-uppercase"
                             >Applicant's Name</label
                           >
-                          <input type="text" class="form-control" id="" placeholder="Enter Applicant's Name"/>
+                          <input
+                            type="text"
+                            required
+                            class="form-control"
+                            id=""
+                            placeholder="Enter Applicant's Name"
+                          />
                         </div>
-
-                        
 
                         <div class="col-md-5 mx-5 mb-3 position-relative">
                           <label
@@ -1257,10 +1261,11 @@
                           >
                           <input
                             type="text"
+                            required
                             class="form-control vanila-datepicker"
                             id="Text2"
                             name="event_date"
-                            placeholder="Enter Birth Day"
+                            placeholder="Enter Birth Date"
                             autocomplete="off"
                             value="05/15/2021"
                           />
@@ -1282,22 +1287,34 @@
                             </svg>
                           </span>
                         </div>
-						<div class="col-md-5 mx-5 mb-3">
-							<label
-							  for="Text1"
-							  class="form-label font-weight-bold text-muted text-uppercase"
-							  >Phone No.</label
-							>
-							<input type="number" class="form-control" id="" placeholder="Enter Phone No."/>
-						  </div>
-						  <div class="col-md-5 mx-5 mb-3">
-							<label
-							  for="Text1"
-							  class="form-label font-weight-bold text-muted text-uppercase"
-							  >Email ID</label
-							>
-							<input type="email" class="form-control" id="" placeholder="Enter Email ID"/>
-						  </div>
+                        <div class="col-md-5 mx-5 mb-3">
+                          <label
+                            for="Text1"
+                            class="form-label font-weight-bold text-muted text-uppercase"
+                            >Phone No.</label
+                          >
+                          <input
+                            type="number"
+                            required
+                            class="form-control"
+                            id=""
+                            placeholder="Enter Phone No."
+                          />
+                        </div>
+                        <div class="col-md-5 mx-5 mb-3">
+                          <label
+                            for="Text1"
+                            class="form-label font-weight-bold text-muted text-uppercase"
+                            >Email ID</label
+                          >
+                          <input
+                            type="email"
+                            required
+                            class="form-control"
+                            id=""
+                            placeholder="Enter Email ID"
+                          />
+                        </div>
                       </form>
                       <div class="d-flex justify-content-end mx-5 mt-3">
                         <button
@@ -1335,15 +1352,24 @@
             </ul>
           </div>
           <div class="col-lg-6 text-right">
-						<span class="mr-1">
-							Copyright
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							© <a href="https://avm-globals.netlify.app/" class="" target="_blank">AVM Global</a>
-							Powered By <a href="https://www.krayon.com.au/" target="_blank" class="">Krayon</a>
-						</span>
-					</div>
+            <span class="mr-1">
+              Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              ©
+              <a
+                href="https://avm-globals.netlify.app/"
+                class=""
+                target="_blank"
+                >AVM Global</a
+              >
+              Powered By
+              <a href="https://www.krayon.com.au/" target="_blank" class=""
+                >Krayon</a
+              >
+            </span>
+          </div>
         </div>
       </div>
     </footer>
