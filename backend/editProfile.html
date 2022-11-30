@@ -1111,7 +1111,7 @@
                         </svg>
                         <a href="../backend/editProfile.html">Edit Profile</a>
                       </li>
-                      
+
                       <li class="dropdown-item d-flex svg-icon border-top">
                         <svg
                           class="svg-icon mr-0 text-secondary"
@@ -1245,7 +1245,8 @@
                                 type="text"
                                 class="form-control"
                                 id="fname"
-                                value="Barry"
+                                value=""
+                                placeholder="Enter First Name"
                               />
                             </div>
                             <div class="form-group col-sm-6">
@@ -1254,16 +1255,18 @@
                                 type="text"
                                 class="form-control"
                                 id="lname"
-                                value="Tech"
+                                placeholder="Enter Last Name"
+                                value=""
                               />
                             </div>
                             <div class="form-group col-sm-6">
-                              <label for="uname">User Name:</label>
+                              <label for="uname">Username:</label>
                               <input
                                 type="text"
                                 class="form-control"
                                 id="uname"
-                                value="Barry@01"
+                                placeholder="Enter Username"
+                                value=""
                               />
                             </div>
                             <div class="form-group col-sm-6">
@@ -1272,7 +1275,8 @@
                                 type="text"
                                 class="form-control"
                                 id="cname"
-                                value="Atlanta"
+                                placeholder="Enter City"
+                                value=""
                               />
                             </div>
                             <div class="form-group col-sm-6">
@@ -1312,36 +1316,59 @@
                               </div>
                             </div>
                             <div class="form-group col-sm-6">
-                              <label for="dob">Date Of Birth:</label>
+                              <label
+                                for="dob"
+                                >Date Of Birth:</label
+                              >
                               <input
-                                class="form-control"
+                                type="text"
+                                class="form-control vanila-datepicker"
                                 id="dob"
-                                value="1984-01-24"
+                                name="event_date"
+                                placeholder="Enter Date of Birth"
+                                autocomplete="off"
+                                value=""
                               />
                             </div>
                             <div class="form-group col-sm-6">
-                              <label>Type:</label>
-                              <select
+                              <label>Address:</label>
+                              <input
+                                type="text"
                                 class="form-control"
-                                id="exampleFormControlSelect1"
-                              >
-                                <option selected="">Lead</option>
-                                <option>Client</option>
-                                <option>User</option>
-                              </select>
+                                id="Text1"
+                                placeholder="Enter Address"
+                                value=""
+                              />
                             </div>
                             <div class="form-group col-sm-6">
-                              <label>Age:</label>
-                              <select
+                              <label>City:</label>
+                              <input
+                                type="text"
                                 class="form-control"
-                                id="exampleFormControlSelect2"
-                              >
-                                <option>12-18</option>
-                                <option>19-32</option>
-                                <option selected="">33-45</option>
-                                <option>46-62</option>
-                                <option>63 ></option>
-                              </select>
+                                id="Text1"
+                                placeholder="Enter City Name"
+                                value=""
+                              />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label>State:</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="Text1"
+                                placeholder="Enter State Name"
+                                value=""
+                              />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label>Post Code:</label>
+                              <input
+                                type="number"
+                                class="form-control"
+                                id="Text1"
+                                placeholder="Enter Post Code"
+                                value=""
+                              />
                             </div>
                             <div class="form-group col-sm-6">
                               <label>Country:</label>
@@ -1349,39 +1376,12 @@
                                 class="form-control"
                                 id="exampleFormControlSelect3"
                               >
-                                <option>Caneda</option>
-                                <option>Noida</option>
+                                <option>Canada</option>
+                                <option>Germany</option>
                                 <option selected="">USA</option>
                                 <option>India</option>
                                 <option>Africa</option>
                               </select>
-                            </div>
-                            <div class="form-group col-sm-6">
-                              <label>State:</label>
-                              <select
-                                class="form-control"
-                                id="exampleFormControlSelect4"
-                              >
-                                <option>California</option>
-                                <option>Florida</option>
-                                <option selected="">Georgia</option>
-                                <option>Connecticut</option>
-                                <option>Louisiana</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-sm-12">
-                              <label>Address:</label>
-                              <textarea
-                                class="form-control"
-                                name="address"
-                                rows="5"
-                                style="line-height: 22px"
-                              >
-37 Cardinal Lane
-Petersburg, VA 23803
-United States of America
-Zip Code: 85001</textarea
-                              >
                             </div>
                           </div>
                           <button
@@ -1628,7 +1628,7 @@ Zip Code: 85001</textarea
                             />
                           </div>
                           <div class="form-group">
-                            <label for="url">Url:</label>
+                            <label for="url">Link:</label>
                             <input
                               type="text"
                               class="form-control"
